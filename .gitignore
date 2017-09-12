@@ -86,7 +86,8 @@ Thumbs.db
 # "plugins" directory
 # "themes" directory
 #!wp-content/plugins/*/**
-#!wp-content/themes/tooth_fairy/
+#!wp-content/themes/tooth_fairy/*/**
+node-modules/
 
 # ignore these plugins
 wp-content/plugins/hello.php
