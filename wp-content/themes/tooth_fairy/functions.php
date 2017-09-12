@@ -102,3 +102,21 @@ require get_template_directory() . '/inc/template-tags.php';
  * Custom functions that act independently of the theme templates.
  */
 require get_template_directory() . '/inc/extras.php';
+
+function wmpudev_enqueue_icon_stylesheet() {
+    wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+    wp_enqueue_style( 'fontawesome');
+}
+add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
+
+function custom_add_google_fonts() {
+wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400', false );
+}
+add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
+
+
+function get_banner(){
+	$img = get_field("banner");
+	        echo '<section style="background: url('.$img.'); background-size:cover; height: 80vh;">';
+	        echo'</section>';
+}
