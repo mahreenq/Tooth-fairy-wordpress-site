@@ -1,9 +1,8 @@
 <?php
 get_header(); ?>
 
-
-<?php while ( have_posts() ) : the_post(); ?>
-
-       		<?php the_content();  ?>
-
-      	<?php endwhile; // End of the loop. ?>
+<?php echo get_field("booking_header");
+echo get_field("booking_sub_header");
+while ( have_posts() ) : the_post();
+  the_content();
+endwhile; // End of the loop. ?>
