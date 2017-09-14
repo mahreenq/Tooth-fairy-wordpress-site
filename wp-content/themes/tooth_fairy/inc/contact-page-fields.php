@@ -1,3 +1,4 @@
+<?php /* Template Name: contact*/ ?>
 page-contact.php
 <?php
 add_action( 'cmb2_admin_init', 'cmb2_contact', 'cmb2_sample' );
