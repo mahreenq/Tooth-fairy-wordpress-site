@@ -19,7 +19,7 @@ $cmb = new_cmb2_box( array(
 ) );
 
 $group_field_id = $cmb->add_field( array(
-	'id'          => 'wiki_test_repeat_group',
+	'id'          => 'contact-field',
 	'type'        => 'group',
 	// 'repeatable'  => false, // use false if you want non-repeatable group
 	'options'     => array(
@@ -31,18 +31,18 @@ $group_field_id = $cmb->add_field( array(
 	),
 ) );
 
-$cmb->add_group_field( $group_field_id, array(
+$cmb->add_field( $group_field_id, array(
 	'name' => 'Contact information',
 	'id'   => 'dentist-name',
 	'type' => 'text',
 ) );
 
-$cmb->add_group_field( $group_field_id, array(
+$cmb->add_field( $group_field_id, array(
 	'name' => 'Phone',
 	'id'   => 'contact-phone-number',
 	'type' => 'text',
 ) );
-$cmb->add_group_field( $group_field_id, array(
+$cmb->add_field( $group_field_id, array(
 	'name' => 'Email',
 	'id'   => 'contact-email',
 	'type' => 'text',
