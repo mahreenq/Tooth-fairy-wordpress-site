@@ -1,4 +1,4 @@
-front-page.php
+gggfront-page.php
 
 <?php /* Template Name: FrontPage*/ ?>
 
