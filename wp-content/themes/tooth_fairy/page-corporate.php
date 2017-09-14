@@ -1,4 +1,4 @@
-<?php /* Template Name: Residential*/ ?>
+<?php /* Template Name: Corporate*/ ?>
 
 
  <?php while ( have_posts() ) : the_post(); ?>

@@ -1,18 +1,18 @@
 <?php
-add_action( 'cmb2_admin_init', 'cmb2_residential');
+add_action( 'cmb2_admin_init', 'cmb2_corporate');
 /**
 * Define the metabox and field configurations.
 */
-function cmb2_residential() {
+function cmb2_corporate() {
 
     // Start with an underscore to hide fields from custom fields list
-    $prefix = '_residential_';
+    $prefix = '_corporate_';
 
 $cmb = new_cmb2_box( array(
-   'id'           => 'residential',
+   'id'           => 'corporate',
    'title'        => 'Our Service is',
    'object_types' => array( 'page' ), // post type
-   'show_on'      => array( 'key' => 'page-template', 'value' => 'page-residential.php' ),
+   'show_on'      => array( 'key' => 'page-template', 'value' => 'page-corporate.php' ),
    'context'      => 'normal', //  'normal', 'advanced', or 'side'
    'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
    'show_names'   => true, // Show field names on the left
@@ -60,13 +60,13 @@ add_action( 'cmb2_admin_init', 'cmb2_residential2');
 /**
 * Define the metabox and field configurations.
 */
-function cmb2_residential2() {
+function cmb2_corporate2() {
 
     // Start with an underscore to hide fields from custom fields list
-    $prefix = '_residential2_';
+    $prefix = '_corporate2_';
 
 $cmb = new_cmb2_box( array(
-   'id'           => 'residential2',
+   'id'           => 'corporate2',
    'title'        => 'The Services We Offer',
    'object_types' => array( 'page' ), // post type
    'show_on'      => array( 'key' => 'page-template', 'value' => 'page-residential.php' ),
