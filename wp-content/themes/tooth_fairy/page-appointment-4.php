@@ -1,5 +1,3 @@
-page-appointment-4.php
-
 <?php while ( have_posts() ) : the_post(); ?>
 
 

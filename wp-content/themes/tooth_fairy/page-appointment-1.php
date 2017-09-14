@@ -1,6 +1,3 @@
-page-appointment-1.php
-
-
 <?php while ( have_posts() ) : the_post(); ?>
 
 
@@ -10,8 +7,6 @@ page-appointment-1.php
 
   <?php the_content(); ?>
 
-<?php endwhile; // End of the loop. 
+<?php endwhile; // End of the loop.
 
 get_footer() ?>
-
-

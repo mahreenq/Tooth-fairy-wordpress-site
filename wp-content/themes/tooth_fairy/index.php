@@ -1,5 +1,3 @@
-index
-
 <?php
 /**
  * The main template file.
