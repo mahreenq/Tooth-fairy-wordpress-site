@@ -4,6 +4,7 @@ include('inc/fag-fields.php');
 include('inc/residential-fields.php');
 include('inc/corporatebooking-page-fields.php');
 include('inc/contact-page-fields.php');
+include('inc/pricing-fields.php');
 /**
  * RED Starter Theme functions and definitions.
  *
