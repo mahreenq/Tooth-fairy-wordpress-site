@@ -135,3 +135,30 @@ register_sidebar( array(
 'before_title' => '<h3 class="widget-title">',
 'after_title' => '</h3>',
 ) );
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> 827b2b223bf7c0fccba14a53c5198706281a69c6
