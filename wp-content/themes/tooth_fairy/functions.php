@@ -1,5 +1,9 @@
 <?php
 include('inc/front-page-fields.php');
+include('inc/fag-fields.php');
+include('inc/residential-fields.php');
+include('inc/corporatebooking-page-fields.php');
+include('inc/contact-page-fields.php');
 /**
  * RED Starter Theme functions and definitions.
  *
