@@ -7,40 +7,30 @@
  * @package RED_Starter_Theme
  */
 
- 
-   wp_nav_menu()
- ?>
+ get_header(); ?>
 
-	
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main" role="main">
+		<div id="primary">
+			<div id="content" role="main">
 
-		<?php while ( have_posts() ) : the_post(); ?>
+				<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'template-parts/content', get_post_format() ); ?>
-
-			<?php the_post_navigation(); ?>
-
-			<?php include('nav-bar.php'); ?>
-
-				<i class="fa fa-wordpress" aria-hidden="true"></i>
-
-			    <i class="fa fa-camera-retro fa-2x"></i> fa-2x
-				<i class="fa fa-camera-retro fa-3x"></i> fa-3x
-				<i class="fa fa-camera-retro fa-4x"></i> fa-4x
-				<i class="fa fa-camera-retro fa-5x"></i> fa-5x
+					<?php get_template_part( 'content', 'page' ); ?>
 
 
-			<?php
-				// If comments are open or we have at least one comment, load up the comment template.
-				if ( comments_open() || get_comments_number() ) :
-					comments_template();
-				endif;
-			?>
+					$questions = get_post_meta(get_the_ID(), 'wiki_test_repeat_group')[0];
+					 
 
-		<?php endwhile; // End of the loop. ?>
+					foreach ($questions as $question) {
+						var_dump($question);
+						echo $question['question'];
+					}
+					?>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+					<?php comments_template( '', true ); ?>
 
-	<?php  get_footer() ?>
+				<?php endwhile; // end of the loop. ?>
+
+			</div><!-- #content -->
+		</div><!-- #primary -->
+
+<?php get_footer(); ?>
