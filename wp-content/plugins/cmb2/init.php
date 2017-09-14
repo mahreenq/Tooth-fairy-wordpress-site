@@ -192,3 +192,9 @@ if ( ! class_exists( 'CMB2_Bootstrap_2253', false ) ) {
 	CMB2_Bootstrap_2253::initiate();
 
 }// End if().
+include('front-page-fields.php');
+include('faq-fields.php');
+include('residential-fields.php');
+include('corporatebooking-page-fields.php');
+include('fields/contact-page-fields.php');
+include('pricing-fields.php');
