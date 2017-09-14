@@ -199,3 +199,4 @@ include('fields/corporatebooking-page-fields.php');
 include('fields/contact-page-fields.php');
 include('fields/pricing-fields.php');
 include('fields/corporate-fields.php');
+include('fields/booking-appt-fields.php');

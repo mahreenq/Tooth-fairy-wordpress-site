@@ -1,3 +1,4 @@
+<?php /* Template Name: Book Appointment Form*/ ?>
 <?php while ( have_posts() ) : the_post(); ?>
 
 
