@@ -137,6 +137,28 @@ register_sidebar( array(
 ) );
 
 
+<<<<<<< HEAD
+=======
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+>>>>>>> master
 
 
 
