@@ -6,10 +6,10 @@ add_action( 'cmb2_admin_init', 'cmb2_corporate_booking');
 function cmb2_corporate_booking() {
 
 	// Start with an underscore to hide fields from custom fields list
-	$prefix = '_corporate_';
+	$prefix = '_corporate-booking_';
 
 $cmb = new_cmb2_box( array(
-    'id'           => 'corporate',
+    'id'           => 'corporate-booking',
     'title'        => 'Corporate Booking',
     'object_types' => array( 'page' ), // post type
     'show_on'      => array( 'key' => 'page-template', 'value' => 'page-corporate-booking.php' ),
