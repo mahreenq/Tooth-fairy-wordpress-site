@@ -1,3 +1,5 @@
+<?php /* Template Name: FAQ*/ ?>
+
 <?php
 /**
  * The template for displaying all single posts.

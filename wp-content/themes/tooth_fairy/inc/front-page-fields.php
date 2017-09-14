@@ -1,6 +1,6 @@
 front-page-fields.php
 <?php
-add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes', 'cmb2_sample' );
+add_action( 'cmb2_admin_init', 'cmb2_sample_metaboxes' );
 /**
  * Define the metabox and field configurations.
  */

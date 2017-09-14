@@ -1,6 +1,6 @@
 <?php
 include('inc/front-page-fields.php');
-include('inc/fag-fields.php');
+include('inc/faq-fields.php');
 include('inc/residential-fields.php');
 include('inc/corporatebooking-page-fields.php');
 include('inc/contact-page-fields.php');
@@ -140,33 +140,3 @@ register_sidebar( array(
 'before_title' => '<h3 class="widget-title">',
 'after_title' => '</h3>',
 ) );
-<<<<<<< HEAD
-
-
-<<<<<<< HEAD
-=======
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> master
-
-
-
-=======
->>>>>>> 2df159bda0b0ac4f211f3bad0d2d67b1ed1945f7

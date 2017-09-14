@@ -3,7 +3,7 @@ add_action( 'cmb2_admin_init', 'cmb2_page_pricing' );
 /**
  * Define the metabox and field configurations.
  */
-function cmb2_sample_metaboxes() {
+function cmb2_page_pricing() {
 
 	// Start with an underscore to hide fields from custom fields list
 	$prefix = '_pricing_';
