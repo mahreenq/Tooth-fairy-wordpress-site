@@ -1,4 +1,3 @@
-page-corporate-booking.php
 <?php
 add_action( 'cmb2_admin_init', 'cmb2_corporate_booking');
 /**
