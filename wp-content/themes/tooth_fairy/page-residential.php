@@ -1,4 +1,5 @@
 page-residential.php
+<?php /* Template Name: Residential*/ ?>
 
 <h1>
  <?php the_field("service_traits"); ?>
