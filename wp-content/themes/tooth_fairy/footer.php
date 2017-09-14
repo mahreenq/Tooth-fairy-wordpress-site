@@ -1,5 +1,3 @@
-footer
-
 <?php
 /**
  * The template for displaying the footer.
@@ -19,7 +17,7 @@ footer
 				</div><!-- .site-info -->
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-        
+
         <?php   if ( ! is_active_sidebar( 'footer' ) ) {
     return;
 }
