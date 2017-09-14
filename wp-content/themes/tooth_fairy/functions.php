@@ -1,4 +1,5 @@
 <?php
+include('inc/front-page-fields.php');
 /**
  * RED Starter Theme functions and definitions.
  *
@@ -120,3 +121,17 @@ function get_banner(){
 	        echo '<section style="background: url('.$img.'); background-size:cover; height: 80vh;">';
 	        echo'</section>';
 }
+
+add_filter( 'rwmb_meta_boxes', 'your_prefix_meta_boxes' );
+
+// footer
+
+register_sidebar( array(
+'name' => 'Footer ',
+'id' => 'footer',
+'description' => 'Appears in the footer area',
+'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+'after_widget' => '</aside>',
+'before_title' => '<h3 class="widget-title">',
+'after_title' => '</h3>',
+) );
