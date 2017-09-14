@@ -196,5 +196,5 @@ include('front-page-fields.php');
 include('faq-fields.php');
 include('residential-fields.php');
 include('corporatebooking-page-fields.php');
-include('contact-page-fields.php');
+include('fields/contact-page-fields.php');
 include('pricing-fields.php');
