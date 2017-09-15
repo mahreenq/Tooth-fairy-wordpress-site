@@ -1,18 +1,18 @@
 <?php
-add_action( 'cmb2_admin_init', 'cmb2_apptform1');
+add_action( 'cmb2_admin_init', 'cmb2_booking');
 /**
 * Define the metabox and field configurations.
 */
-function cmb2_apptform1() {
+function cmb2_booking() {
 
     // Start with an underscore to hide fields from custom fields list
-    $prefix = '_appt1_';
+    $prefix = '_booking_';
 
 $cmb = new_cmb2_box( array(
-   'id'           => 'appt-form-1',
-   'title'        => 'Form 1 Headings',
+   'id'           => 'booking-form-1',
+   'title'        => 'Booking Headings',
    'object_types' => array( 'page' ), // post type
-   'show_on'      => array( 'key' => 'page-template', 'value' => 'page-appointment-1.php' ),
+   'show_on'      => array( 'key' => 'page-template', 'value' => 'page-appointment-4.php' ),
    'context'      => 'normal', //  'normal', 'advanced', or 'side'
    'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
    'show_names'   => true, // Show field names on the left
@@ -32,19 +32,25 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Heading',
-    'description' => 'Title for Appointment Page',
-    'id'   => 'title-appt-1',
+    'name' => 'Banner Title',
+    'id'   => 'title-banner-form1',
+    'description' => 'Title for Banner',
     'type' => 'text',
 ) );
 
+$cmb->add_group_field( $group_field_id, array(
+    'name' => 'Banner Image',
+    'description' => 'Upload an Image',
+    'id'   => 'image-banner-form1',
+    'type' => 'file',
+) );
 
 
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Subheading',
-    'description' => 'Write a subheading ex. Step 1) ...',
-    'id'   => 'subtitle-appt-1',
+    'name' => 'Banner Description',
+    'description' => 'Write a short description to display on banner',
+    'id'   => 'description-banner-form1',
     'type' => 'textarea_small',
 ) );
 
-}?>
+}
