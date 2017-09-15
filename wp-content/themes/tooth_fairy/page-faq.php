@@ -14,11 +14,15 @@
 
 				<?php while ( have_posts() ) : the_post(); ?>
 
-					<?php get_template_part( 'content', 'page' ); ?>
-
-
-					$questions = get_post_meta(get_the_ID(), 'wiki_test_repeat_group')[0];
-					 
+					<?php get_template_part( 'content', 'page' ); 
+               ?>
+                 <div>
+                 <?php  	$questions = get_post_meta(get_the_ID(), 'wiki_test_repeat_group')[0]; ?>
+                 </div>
+                    
+                  <?php  
+				
+					$answers = get_post_meta(get_the_ID(), 'wiki_test_repeat_group'[0];) 
 
 					foreach ($questions as $question) {
 						var_dump($question);
