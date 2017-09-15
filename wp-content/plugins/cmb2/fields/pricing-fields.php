@@ -147,7 +147,7 @@ $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Insurance Info',
 	'id'   => 'insurance-info-pricing',
 	'type' => 'text',
-	'type' => 'textarea_small',
+	'type' => 'text',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
@@ -207,7 +207,7 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Payments Accepted',
 	'id'   => 'payments-pricing',
-	'type' => 'textarea_small',
+	'type' => 'text',
 ) );
 };
 
@@ -295,7 +295,7 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Discounts Main',
 	'id'   => 'discounts-main-pricing',
-	'type' => 'textarea_small',
+	'type' => 'text',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
