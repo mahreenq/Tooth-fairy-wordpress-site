@@ -41,9 +41,14 @@ $cmb->add_group_field( $group_field_id, array(
 	'id'   => 'slogan-front',
 	'type' => 'text',
 ) );
+
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'reasons-title',
+	'id'   => 'reasons-title',
+	'type' => 'text',
+) );
+
 }
-
-
 //====================================================================
 //Why choose GTA Tooth Fairy?
 
@@ -176,6 +181,11 @@ $cmb = new_cmb2_box( array(
     'show_names'   => true, // Show field names on the left
 ) );
 
+$cmb->add_field( array(
+	'name' => 'Our Team',
+	'id'   => 'team-front',
+	'type' => 'text',
+) );
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_4',
 	'type'        => 'group',
@@ -190,8 +200,8 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Our Team',
-	'id'   => 'team-front',
+	'name' => 'team Name',
+	'id'   => 'team-name-front',
 	'type' => 'text',
 ) );
 
@@ -204,7 +214,7 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Description',
 	'description' => 'Write a short description for this entry',
-	'id'   => 'description',
+	'id'   => 'team-description',
 	'type' => 'textarea_small',
 ) );
 }
