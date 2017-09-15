@@ -147,7 +147,6 @@ $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Insurance Info',
 	'id'   => 'insurance-info-pricing',
 	'type' => 'text',
-	'type' => 'text',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
