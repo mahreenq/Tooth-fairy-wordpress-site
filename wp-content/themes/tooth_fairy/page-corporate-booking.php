@@ -1,4 +1,4 @@
-<?php /* Template Name: Corporate*/ ?>
+<?php /* Template Name: Corporatebooking*/ ?>
 <?php
 get_header(); ?>
 
