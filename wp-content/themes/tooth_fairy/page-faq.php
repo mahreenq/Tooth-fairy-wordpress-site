@@ -1,36 +1,35 @@
-<?php /* Template Name: FAQ*/ ?>
+	<?php /* Template Name: FAQ*/ ?>
 
-<?php
-/**
- * The template for displaying all single posts.
- *
- * @package RED_Starter_Theme
- */
+	<?php
+	/**
+	* The template for displaying all single posts.
+	*
+	* @package RED_Starter_Theme
+	*/
 
- get_header(); ?>
+	get_header(); ?>
 
-		<div id="primary">
-			<div id="content" role="main">
+	<div id="primary">
+	<div id="content" role="main">
 
-				<?php while ( have_posts() ) : the_post(); ?>
+	<?php while ( have_posts() ) : the_post(); 
+	
+	// Array to get the FAQ Fields
 
-					<?php get_template_part( 'content', 'page' ); ?>
+	<?php  	$faqs = get_post_meta(get_the_ID(), 'wiki_test_repeat_group')[0]; 
 
+	// Acessing members of the array
 
-					$questions = get_post_meta(get_the_ID(), 'wiki_test_repeat_group')[0];
-					 
+	foreach($faqs as $faq) {
+	echo $faq['question'];
+	echo $faq['answer'];
+	}
+		
+	?>
 
-					foreach ($questions as $question) {
-						var_dump($question);
-						echo $question['question'];
-					}
-					?>
+	<?php endwhile; // end of the loop. ?>
 
-					<?php comments_template( '', true ); ?>
+	</div><!-- #content -->
+	</div><!-- #primary -->
 
-				<?php endwhile; // end of the loop. ?>
-
-			</div><!-- #content -->
-		</div><!-- #primary -->
-
-<?php get_footer(); ?>
+	<?php get_footer(); ?>
