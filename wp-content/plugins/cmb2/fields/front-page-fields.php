@@ -43,6 +43,8 @@ $cmb->add_group_field( $group_field_id, array(
 ) );
 }
 
+
+//====================================================================
 //Why choose GTA Tooth Fairy?
 
 add_action( 'cmb2_admin_init', 'cmb2_front_page_2' );
@@ -96,6 +98,7 @@ $cmb->add_group_field( $group_field_id, array(
 ) );
 }
 
+//====================================================================
 //Who are you?
 
 add_action( 'cmb2_admin_init', 'cmb2_front_page_3' );
@@ -150,6 +153,8 @@ $cmb->add_group_field( $group_field_id, array(
 
 }
 
+
+//====================================================================
 //Who are we?
 
 add_action( 'cmb2_admin_init', 'cmb2_front_page_4' );
@@ -204,6 +209,8 @@ $cmb->add_group_field( $group_field_id, array(
 ) );
 }
 
+
+//====================================================================
 //Affiliations
 
 add_action( 'cmb2_admin_init', 'cmb2_front_page_5' );
