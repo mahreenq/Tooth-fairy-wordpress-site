@@ -97,3 +97,7 @@ wp-content/themes/twenty*/
 
 # ignore node/grunt dependency directories
 node_modules/
+
+# ignore uploads and upgrade
+wp-content/upgrade/
+wp-content/uploads/
