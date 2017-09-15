@@ -9,7 +9,7 @@ function cmb2_page_pricing() {
 	$prefix = '_pricing_';
 
 $cmb = new_cmb2_box( array(
-    'id'           => 'main-pricing',
+    'id'           => 'main_pricing',
     'title'        => 'About Pricing',
     'object_types' => array( 'page' ), // post type
     'show_on'      => array( 'key' => 'page-template', 'value' => 'page-pricing.php' ),
@@ -147,17 +147,12 @@ $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Insurance Info',
 	'id'   => 'insurance-info-pricing',
 	'type' => 'text',
+	'type' => 'textarea_small',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Search Bar Message',
 	'id'   => 'search-bar-message-pricing',
-	'type' => 'text',
-) );
-
-$cmb->add_group_field( $group_field_id, array(
-	'name' => 'Plans Accepted',
-	'id'   => 'plans-accepted-pricing',
 	'type' => 'text',
 ) );
 
@@ -282,7 +277,7 @@ $cmb = new_cmb2_box( array(
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_6',
 	'type'        => 'group',
-	// 'repeatable'  => false, // use false if you want non-repeatable group
+	'repeatable'  => false, // use false if you want non-repeatable group
 	'options'     => array(
 		'group_title'   => __( '', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
 		'add_button'    => __( 'Add Another Entry', 'cmb2' ),
