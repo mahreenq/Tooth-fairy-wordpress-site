@@ -207,7 +207,6 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Payments Accepted',
 	'id'   => 'payments-pricing',
-	'type' => 'text',
 	'type' => 'textarea_small',
 ) );
 };
@@ -296,7 +295,6 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Discounts Main',
 	'id'   => 'discounts-main-pricing',
-	'type' => 'text',
 	'type' => 'textarea_small',
 ) );
 
