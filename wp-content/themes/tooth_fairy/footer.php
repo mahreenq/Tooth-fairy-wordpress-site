@@ -11,17 +11,13 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
-	<a href="<?php echo esc_url( 'https://wordpress.org/' ); ?>"><?php printf( esc_html( 'Proudly powered by %s' ), 'WordPress' ); ?></a>
-	<i class="fa fa-wordpress" aria-hidden="true"></i>
-
-	</div><!-- .site-info -->
-	</footer><!-- #colophon -->
-	</div><!-- #page -->
-
+	
 	<?php   if ( ! is_active_sidebar( 'footer' ) ) {
 	return;
 	}
 	?>
+    <i class="fa fa-facebook" aria-hidden="true"></i>
+
 
 	<div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'footer' ); ?>
@@ -29,5 +25,8 @@
 
 	<?php wp_footer(); ?>
 
+	</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+	</div><!-- #page -->
 	</body>
 	</html>
