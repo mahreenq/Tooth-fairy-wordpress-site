@@ -1,23 +1,21 @@
 <?php /* Template Name: Contact*/ ?>
 <?php
 get_header();
-the_post_thumbnail();
+
 
 while ( have_posts() ) : the_post();
+the_post_thumbnail(); ?>
+<?php
+$text = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
+
+foreach($text[0] as $info) {
+    echo $info['dentist-name'];
+    echo "</br>";
+    echo $info['contact-phone-number'];
+    echo "</br>";
+    echo $info['contact-email'];
+    }
+?>
+<?php
  the_content();
 endwhile; // End of the loop. ?>
-<?php while ( have_posts() ) : the_post(); ?>
-					<?php
-					$text  = get_post_meta( get_the_ID(), 'contact-field')[0];
-					$phone = get_post_meta( get_the_ID(), 'contact-phone-number', true );
-					$email   = get_post_meta( get_the_ID(), 'contact-email', true );
-          echo "</br>";
-          var_dump($text[0]);
-          echo "</br>";
-					echo 'phone'.( $phone );
-          echo "</br>";
-					echo 'email'.( $email );
-					?>
-
-
-				<?php endwhile; // end of the loop. ?>

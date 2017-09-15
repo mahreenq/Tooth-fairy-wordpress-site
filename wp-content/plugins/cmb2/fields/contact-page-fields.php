@@ -32,7 +32,7 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Contact information',
+	'name' => 'ContactInformation',
 	'id'   => 'dentist-name',
 	'type' => 'text',
 ) );
