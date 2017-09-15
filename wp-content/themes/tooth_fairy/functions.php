@@ -7,7 +7,7 @@
  *
  * @package RED_Starter_Theme
  */
-
+require_once("inc/form-redirect.php");
 if ( ! function_exists( 'red_starter_setup' ) ) :
 /**
  * Sets up theme defaults and registers support for various WordPress features.

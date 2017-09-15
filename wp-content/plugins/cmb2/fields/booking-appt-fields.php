@@ -12,7 +12,7 @@ $cmb = new_cmb2_box( array(
    'id'           => 'booking-form-1',
    'title'        => 'Booking Headings',
    'object_types' => array( 'page' ), // post type
-   'show_on'      => array( 'key' => 'page-template', 'value' => 'page-appointment-4.php' ),
+   'show_on'      => array( 'key' => 'page-template', 'value' => 'template-parts/content-forms.php' ),
    'context'      => 'normal', //  'normal', 'advanced', or 'side'
    'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
    'show_names'   => true, // Show field names on the left
@@ -32,25 +32,26 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Banner Title',
-    'id'   => 'title-banner-form1',
-    'description' => 'Title for Banner',
+    'name' => 'Heading 1',
+    'id'   => 'heading-form-1',
+    'description' => 'Title for Form',
     'type' => 'text',
 ) );
 
+
+
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Banner Image',
-    'description' => 'Upload an Image',
-    'id'   => 'image-banner-form1',
-    'type' => 'file',
+    'name' => 'Sub Heading',
+    'description' => 'ex. Step 1 ...',
+    'id'   => 'subheading-form-1',
+    'type' => 'textarea_small',
 ) );
 
-
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Banner Description',
-    'description' => 'Write a short description to display on banner',
-    'id'   => 'description-banner-form1',
-    'type' => 'textarea_small',
+    'name' => 'Booking Informatiom',
+    'id'   => 'booking-info',
+    'description' => 'Insert note for users regarding booking hours',
+    'type' => 'text',
 ) );
 
 }
