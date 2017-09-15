@@ -16,20 +16,26 @@
 	
 	// Array to get the FAQ Fields
 
-	<?php  	$faqs = get_post_meta(get_the_ID(), 'wiki_test_repeat_group')[0]; 
+  	$faqs = get_post_meta(get_the_ID(), 'wiki_test_repeat_group'); 
 
 	// Acessing members of the array
 
-	foreach($faqs as $faq) {
-	echo $faq['question'];
-	echo $faq['answer'];
-	}
+	foreach($faqs[0] as $faq) {  
+	?>  <div>
+	
+    <!-- Wraps members of array in elements   -->
+	 <h2><?php echo $faq['title'];?></h2>
+	 <b><?php  echo $faq['question'];?></b>
+     <p><?php  echo $faq['answer'];?></p>
+	   
+	  </div>
+	   <?php
+} ?>
 		
-	?>
 
 	<?php endwhile; // end of the loop. ?>
 
 	</div><!-- #content -->
 	</div><!-- #primary -->
 
-	<?php get_footer(); ?>
+	<?php get_footer(); ?> 
