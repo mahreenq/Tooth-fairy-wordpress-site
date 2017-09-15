@@ -8,13 +8,13 @@ while ( have_posts() ) : the_post();
 endwhile; // End of the loop. ?>
 <?php while ( have_posts() ) : the_post(); ?>
 					<?php
-					$text  = get_post_meta( get_the_ID(), 'dentist-name', true );
+					$text  = get_post_meta( get_the_ID(), 'contact-field', true );
 					$phone = get_post_meta( get_the_ID(), 'contact-phone-number', true );
 					$email   = get_post_meta( get_the_ID(), 'contact-email', true );
           $blah = get_post_meta(get_the_ID(), 'contact-field');
           var_dump($blah[0]);
           echo "</br>";
-          var_dump($text[0]);
+          var_dump($text);
           echo "</br>";
 					echo 'phone'.( $phone );
           echo "</br>";
