@@ -9,7 +9,7 @@ $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 		<div class="relative">
 			<div class="home-banner " style="background: url('<?php echo $info['banner-front']; ?>'); background-size:cover;">
 			</div>
-			<h2 class="blue-font zero-bottom padding-med absolute d-white-font "> <?php echo $info['slogan-front'] ?> </h2>
+			<h2 class="blue-font zero-bottom home-padding absolute d-white-font "> <?php echo $info['slogan-front'] ?> </h2>
 		</div>
 <div class="padding-med">
 		<h3 class="padding-bottom-med"> <?php
@@ -30,11 +30,12 @@ $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 		<?php
 		} ?>
 </div>
-<div class="lg-blue-bkg flex">
+<div class="lg-blue-bkg flex home-padding">
 	<?php
+
 	$frontServices = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_3');
 			foreach($frontServices[0] as $services) { ?>
-				<div class="direction-column">
+				<div class="direction-column width-50">
 					<h3 class="text-center"><?php echo $services['customer-front'];?></h3>
 					<img src= "<?php echo $services['customer-type-image-front']; ?>">
 					<button><?php echo $services['learn-button-front']; ?></button>
@@ -42,20 +43,21 @@ $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 				<?php
 			}?>
 </div>
+<div class="padding-lg">
 <?php
-	$dentalTeamHeader = get_post_meta( get_the_ID(), 'team-front');
-		print_r($dentalTeamHeader[0]);
-?>
+	$dentalTeamHeader = get_post_meta( get_the_ID(), 'team-front'); ?>
+		<h3> <?php echo($dentalTeamHeader[0]);?> </h3>
 <?php
 $frontForth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 	foreach($frontForth[0] as $dentalTeam) { ?>
-		<div>
-			<img src= "<?php echo $dentalTeam['team-image-front']; ?>">
-			<h3><?php echo $dentalTeam['team-name-front'];?></h3>
+		<div class="flex direction-column">
+			<h3 class="lg-blue-font"><?php echo $dentalTeam['team-name-front'];?></h3>
+			<img class="width-50 align-self-center padding-bottom-sm" src= "<?php echo $dentalTeam['team-image-front']; ?>">
 			<p><?php echo $dentalTeam['team-description']; ?></p>
 		</div>
 	<?php
 }?>
+<div class="flex">
 <?php
 $frontFifth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 		foreach($frontFifth[0] as $dentalPartners) { ?>
@@ -65,7 +67,8 @@ $frontFifth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 <?php
 	}
 ?>
-
+</div>
+</div>
 
 <?php while ( have_posts() ) : the_post();
 	the_content();

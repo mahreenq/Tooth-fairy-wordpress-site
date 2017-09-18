@@ -198,19 +198,16 @@ $group_field_id = $cmb->add_field( array(
 		'closed'     => true, // true to have the groups closed by default
 	),
 ) );
-
-$cmb->add_group_field( $group_field_id, array(
-	'name' => 'team Name',
-	'id'   => 'team-name-front',
-	'type' => 'text',
-) );
-
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Team Image',
 	'id'   => 'team-image-front',
 	'type' => 'file',
 ) );
-
+$cmb->add_group_field( $group_field_id, array(
+	'name' => 'team Name',
+	'id'   => 'team-name-front',
+	'type' => 'text',
+) );
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Description',
 	'description' => 'Write a short description for this entry',

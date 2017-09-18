@@ -41,6 +41,24 @@
 	align-items: stretch;
 }
 
+/*align-self*/
+
+.align-self-start{
+	align-self: flex-start;
+}
+.align-self-end{
+	align-self: flex-end;
+}
+.align-self-center{
+	align-self: center;
+}
+.align-self-baseline{
+	align-self: baseline;
+}
+.align-self-stretch{
+	align-self: stretch;
+}
+
 /*flex-direction*/
 
 .direction-row{
