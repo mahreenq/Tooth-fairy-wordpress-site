@@ -11,12 +11,9 @@
 
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
+
 	
-	<?php   if ( ! is_active_sidebar( 'footer' ) ) {
-	return;
-	}
-	?>
-  
+
 
 
 	<div id="secondary" class="widget-area" role="complementary">
