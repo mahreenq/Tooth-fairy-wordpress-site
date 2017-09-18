@@ -730,7 +730,37 @@ object {
   text-align: center; }
 
 /* Front page */
+.home-banner {
+  height: 35vh; }
+
+.relative {
+  position: relative; }
+
+.zero-bottom {
+  bottom: 0; }
+
 /* Contact Page */
+/* Contact forms */
+input {
+  margin-top: 0.5rem; }
+
+.wpcf7-radio {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+input[type="submit"] {
+  background-color: #FFD466;
+  border: none;
+  color: #fff; }
+
+input[type="date"] {
+  background-color: #FFD466; }
+
+input[type="number"] {
+  width: 50px; }
+
 /*--------------------------------------------------------------
 # Flex
 --------------------------------------------------------------*/
@@ -743,7 +773,7 @@ object {
   -ms-flex-pack: start;
       justify-content: flex-start; }
 
-.justfiy-end {
+.justify-end {
   -ms-flex-pack: end;
       justify-content: flex-end; }
 
@@ -945,5 +975,14 @@ object {
 .padding-bottom-xlg {
   padding-bottom: 5em; }
 
+.padding-side-sm {
+  padding: 0 1em 0 1em; }
+
 .contact-padding {
   padding: 2em 5em 2em 5em; }
+
+@media only screen and (min-width: 600px) {
+  .absolute {
+    position: absolute; }
+  .d-white-font {
+    color: #fff; } }
