@@ -8,9 +8,14 @@
 	*/
 
 	get_header(); ?>
+/*
 
+if window width < 480
+3 lines to bring in lib
+
+*/
 	<div id="primary">
-	<div id="content" role="main">
+	<div id="content" role="main" data>
 
 	<?php while ( have_posts() ) : the_post(); 
 	
@@ -20,14 +25,16 @@
   	
 	// Acessing members of the array
 
+    
+
+
     if(sizeof($faqs[0]) > 0){
 
 	foreach($faqs[0] as $faq) {  
 	?>  
-	 <div>
+	 <div data-collapse>
 	
     <!-- Wraps members of array in elements   -->
-	 <h2><?php echo $faq['title'];?></h2>
 	 <h4><?php  echo $faq['question'];?></h4>
      <p><?php  echo $faq['answer'];?></p>
 	   
