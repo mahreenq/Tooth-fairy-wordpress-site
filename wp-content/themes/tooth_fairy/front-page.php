@@ -52,7 +52,7 @@ $frontForth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 		<div>
 			<img src= "<?php echo $dentalTeam['team-image-front']; ?>">
 			<h3><?php echo $dentalTeam['team-name-front'];?></h3>
-			<p><?php echo $dentalTeam['team-description-front']; ?></p>
+			<p><?php echo $dentalTeam['team-description']; ?></p>
 		</div>
 	<?php
 }?>
