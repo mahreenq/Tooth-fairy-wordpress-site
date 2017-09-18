@@ -12,21 +12,13 @@
 	<footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
 	
-	<?php   if ( ! is_active_sidebar( 'footer' ) ) {
-	return;
-	}
-	?>
-  
-
-
+	
 	<div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'footer' ); ?>
 	  <i class="fa fa-facebook" aria-hidden="true"></i>
 	  <i class="fa fa-twitter" aria-hidden="true"></i>
 	  <i class="fa fa-phone" aria-hidden="true"></i>
 	  <i class="fa fa-envelope-o" aria-hidden="true"></i>
-
-
 
 
 	</div><!-- #secondary -->
