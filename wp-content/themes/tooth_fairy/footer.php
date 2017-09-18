@@ -16,12 +16,19 @@
 	return;
 	}
 	?>
-    <i class="fa fa-facebook" aria-hidden="true"></i>
+  
 
 
 	<div id="secondary" class="widget-area" role="complementary">
 	<?php dynamic_sidebar( 'footer' ); ?>
+	  <i class="fa fa-facebook" aria-hidden="true"></i>
+	  <i class="fa fa-twitter" aria-hidden="true"></i>
+	  <i class="fa fa-phone" aria-hidden="true"></i>
+
+
+
 	</div><!-- #secondary -->
+
 
 	<?php wp_footer(); ?>
 
