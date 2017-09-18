@@ -17,7 +17,6 @@
 	// Array to get the FAQ Fields
 
   	$faqs = get_post_meta(get_the_ID(), 'wiki_test_repeat_group'); 
-  	echo sizeof($faqs);
   	
 	// Acessing members of the array
 
@@ -29,7 +28,7 @@
 	
     <!-- Wraps members of array in elements   -->
 	 <h2><?php echo $faq['title'];?></h2>
-	 <b><?php  echo $faq['question'];?></b>
+	 <h4><?php  echo $faq['question'];?></h4>
      <p><?php  echo $faq['answer'];?></p>
 	   
 	  </div>
@@ -45,16 +44,4 @@
 
 	<?php get_footer(); ?> 
 
-	<?php 
-/*
-function checksomething($arr){
-	if (sizeof($arr[0]) > 0) {
-		
-
-		# code...
-	}
-	} 
-
-checksomething($faqs);
-checksomething($questions);
-checksomething($myarrayname) 	?>
+	
