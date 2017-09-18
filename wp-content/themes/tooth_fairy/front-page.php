@@ -7,7 +7,7 @@ get_header();
 $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 	foreach($bannerFront[0] as $info) { ?>
 		<div style="background: url('<?php echo $info['banner-front']; ?>'); background-size:cover; height:80vh;">
-			<h2> <?php echo $info['slogan-front'] ?> </h2>
+			<h2 class="white-font"> <?php echo $info['slogan-front'] ?> </h2>
 		</div>
 		<?php
     	echo $info['reasons-title'];
@@ -60,3 +60,4 @@ $frontFifth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 <?php while ( have_posts() ) : the_post();
 	the_content();
 endwhile; ?>
+<?php get_footer(); ?>
