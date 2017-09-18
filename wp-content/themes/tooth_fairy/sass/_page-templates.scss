@@ -4,9 +4,12 @@
 .text-center{
   text-align: center;
 }
+.text-right{
+     text-align:right;
+}
 /* Front page */
 .home-banner{
-  height: 35vh;
+  height: 20vh;
 }
 .relative{
   position: relative;
@@ -15,23 +18,3 @@
   bottom:0;
 }
 /* Contact Page */
-
-/* Contact forms */
-input {
-margin-top: 0.5rem;
-}
-.wpcf7-radio{
-display:flex;
-flex-direction: column;
-}
-input[type="submit"] {
-   background-color: $yellow;
-   border: none;
-   color: $white;
-}
-input[type="date"] {
-  background-color: $yellow;
-}
-input[type="number"] {
- width: 50px;
-}
