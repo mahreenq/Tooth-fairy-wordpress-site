@@ -3,7 +3,7 @@
 <?php
 get_header();
 
-// About Pricing
+// About Pricing ===================================
     $price = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
     if(sizeof($price[0]) > 0){
     echo "<div>";
@@ -28,7 +28,7 @@ else{
 
 
 <?php
-// Savings
+// Savings =========================================
 
 $price_category = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
 if(sizeof($price_category[0]) > 0){
@@ -55,7 +55,7 @@ else{
 
 
 <?php
-// Insurance
+// Insurance ====================================
 $main_pricing_3 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_3');
     if(sizeof($main_pricing_3[0]) > 0){
     foreach($main_pricing_3[0] as $main_pricing_3) {
@@ -75,37 +75,43 @@ else{
 }
 ?>
 
-<?php print_r(get_post_meta( get_the_ID(), 'wiki_test_repeat_group_search')) ?>
+<?php
+//search bar ==========================================
 
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>jQuery UI Autocomplete - Default functionality</title>
-  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="/resources/demos/style.css">
+$auto = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_search');
+$providers = "";
+$i = 0;
+foreach ($auto[0] as $a) {
+    $providers .= ($i === 0 ?'"' : ',"').$a['provider'].'"';
+    $i++; 
+}
+?>
+
+<div>
+<!--   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
+
   <script>
   $( function() {
-    var availableTags = [
+    var availableTags = <?php echo json_encode($main_pricing_search); ?>;
+    
 
-    ];
     $( "#tags" ).autocomplete({
-      source: availableTags
+      source: [<?php echo $providers;?>]
     });
   } );
   </script>
-</head>
-<body>
+</div>
  
 <div class="ui-widget">
   <label for="tags">Tags: </label>
   <input id="tags">
 </div>
-</body>
+
 
 <?php
-// Payment
+// Payment ================================================
 $main_pricing_4 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 if(sizeof($main_pricing_4[0]) > 0){
     foreach($main_pricing_4[0] as $main_pricing_4) {
@@ -126,7 +132,7 @@ else{
 
 
 <?php
-// Payment Card Images
+// Payment Card Images =============================
 $main_pricing_5 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 if(sizeof($main_pricing_5[0]) > 0){
         echo "<div>";
@@ -146,7 +152,7 @@ else{
 
 
 <?php
-// Discounts
+// Discounts ====================================
 $main_pricing_6 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_6');
 if(sizeof($main_pricing_6[0]) > 0){
 foreach($main_pricing_6[0] as $main_pricing_6) {
