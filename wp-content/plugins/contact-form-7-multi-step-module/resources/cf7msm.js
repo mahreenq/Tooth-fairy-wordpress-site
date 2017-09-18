@@ -44,7 +44,7 @@ jQuery(document).ready(function($) {
 							field.filter('input[value="' + val + '"]').prop('checked', true);
 						}
 						else {
-							field.val(val);	
+							field.val(val);
 						}
 					}
 					else {
@@ -54,7 +54,7 @@ jQuery(document).ready(function($) {
 							if ( val != '' && val.length > 0  ) {
 								$.each(val, function(i, v){
 									field.filter('input[value="' + v + '"]').prop('checked', true);
-								});	
+								});
 							}
 						}
 					}
@@ -135,7 +135,7 @@ jQuery(document).ready(function($) {
 					cf7msm[name] = value;
 				});
 				cf7msm['step-' + currStep + '-names'] = names;
-				localStorage.setObject( 'cf7msm', cf7msm );	
+				localStorage.setObject( 'cf7msm', cf7msm );
 			}
 			*/
 			localStorage.setObject('cf7msm', cf7msm_ls);
