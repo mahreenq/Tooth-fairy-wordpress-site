@@ -88,24 +88,34 @@ foreach ($auto[0] as $a) {
 ?>
 
 <div>
-<!--   <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script> -->
-
   <script>
-  $( function() {
-    var availableTags = <?php echo json_encode($main_pricing_search); ?>;
-    
-
+    $( function() {
+    var providers = <?php echo "[".$providers."]"; ?>;
+    console.log(providers);
     $( "#tags" ).autocomplete({
       source: [<?php echo $providers;?>]
     });
-  } );
+    });
+
+    var tags = document.getElementById('tags').value; 
+    tags.addEventListener("input", checkValue());
+
+    function checkValue(){
+        var input = document.getElementById('tags').value;
+        if (providers.indexOf(input) > -1) {
+            console.log("hi");
+        }
+        else{
+            console.log("no");
+        }
+    }
+
   </script>
+<?php echo $providers; ?>
 </div>
  
 <div class="ui-widget">
-  <label for="tags">Tags: </label>
+  <label for="tags"></label>
   <input id="tags">
 </div>
 
