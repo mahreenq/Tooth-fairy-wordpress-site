@@ -41,7 +41,7 @@ $cmb->add_group_field( $group_field_id, array(
     'name' => 'Answers',
     'description' => '',
     'id'   => 'answer',
-    'type' => 'textarea_small',
+    'type' => 'wysiwyg',
 ) );
 
 }?>
