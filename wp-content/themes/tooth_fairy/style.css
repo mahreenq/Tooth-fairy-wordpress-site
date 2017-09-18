@@ -43,6 +43,56 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
 	## Front page
 --------------------------------------------------------------*/
+/*   CSS RESET  */
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+main, menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, main, menu, nav, section {
+  display: block; }
+
+body {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+blockquote, q {
+  quotes: none; }
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none; }
+
+/* Don't kill focus outline for keyboard users: http://24ways.org/2009/dont-lose-your-focus */
+a:hover, a:active {
+  outline: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
 html {
   font-family: sans-serif;
   -webkit-text-size-adjust: 100%;
@@ -676,7 +726,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
 /* Front page */
+/* Contact Page */
 /*--------------------------------------------------------------
 # Flex
 --------------------------------------------------------------*/
@@ -801,6 +855,33 @@ object {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
 
+.med-blue-bkg {
+  background-color: #68B7E7; }
+
+.lg-blue-bkg {
+  background-color: #DBF4F2; }
+
+.lg-yellow-bkg {
+  background-color: #FFDB80; }
+
+.yellow-bkg {
+  background-color: #FFD466; }
+
+.width-10 {
+  width: 10%; }
+
+.width-25 {
+  width: 25%; }
+
+.width-50 {
+  width: 50%; }
+
+.width-75 {
+  width: 75%; }
+
+.width-100 {
+  width: 100%; }
+
 .padding-xsm {
   padding: .1em; }
 
@@ -814,7 +895,7 @@ object {
   padding: 2em; }
 
 .padding-xlg {
-  padding: 3em; }
+  padding: 5em; }
 
 .padding-top-sm {
   padding-top: .5em; }
@@ -826,7 +907,7 @@ object {
   padding-top: 2em; }
 
 .padding-top-xl {
-  padding-top: 3em; }
+  padding-top: 5em; }
 
 .padding-right-sm {
   padding-right: .5em; }
@@ -838,7 +919,7 @@ object {
   padding-right: 2em; }
 
 .padding-right-xlg {
-  padding-right: 3em; }
+  padding-right: 5em; }
 
 .padding-left-sm {
   padding-left: .5em; }
@@ -850,7 +931,7 @@ object {
   padding-left: 2em; }
 
 .padding-left-xlg {
-  padding-left: 3em; }
+  padding-left: 5em; }
 
 .padding-bottom-sm {
   padding-bottom: .5em; }
@@ -862,4 +943,7 @@ object {
   padding-bottom: 2em; }
 
 .padding-bottom-xlg {
-  padding-bottom: 3em; }
+  padding-bottom: 5em; }
+
+.contact-padding {
+  padding: 2em 5em 2em 5em; }
