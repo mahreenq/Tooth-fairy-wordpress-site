@@ -20,3 +20,4 @@ foreach($text[0] as $info) {
 <?php
  the_content();
 endwhile; // End of the loop. ?>
+<?php get_footer(); ?>

@@ -35,3 +35,4 @@ if(sizeof($bannerCorp[0]) > 0){
 <?php
     $bookCorp = get_post_meta( get_the_ID(), 'scheduleAppCorp');?>
           <button> <?php echo $bookCorp[0]?> </button>
+<?php get_footer(); ?>

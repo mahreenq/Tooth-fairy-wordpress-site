@@ -15,3 +15,4 @@ print_r($text[0][0]['description']);
 <?php
  the_content();
 endwhile; // End of the loop. ?>
+<?php get_footer(); ?>

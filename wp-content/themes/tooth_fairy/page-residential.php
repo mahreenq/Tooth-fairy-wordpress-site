@@ -37,3 +37,4 @@ while($i < 4) {
 <?php
     $bookCorp = get_post_meta( get_the_ID(), 'corpApp');?>
     <p> <?php echo $bookCorp[0]?></p>
+<?php get_footer(); ?>
