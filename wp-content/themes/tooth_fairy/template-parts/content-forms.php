@@ -24,7 +24,7 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'book-step-4', 'b
       <h2 class="">
         <?php echo $bookingformheading['subheading-form-1']; ?>
       </h2>
-      <h4 class="">
+      <h4 class="padding-lg">
         <?php echo $bookingformheading['booking-info']; ?>
       </h4>
     </div>
@@ -46,20 +46,20 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'book-step-4', 'b
 
 <div class="flex justify-center padding-top-xl padding-bottom-xlg" >
  <?php if (is_page('book-step-1')){ ?>
-  <img class= "width-80" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_1.png">
+  <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_1.png">
   <?php } ?>
 
   <?php if (is_page('book-step-2')){ ?>
-   <img class= "width-80" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_2.png">
+   <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_2.png">
    <?php } ?>
    <?php if (is_page('book-step-3')){ ?>
-    <img class= "width-80" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_3.png">
+    <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_3.png">
     <?php } ?>
     <?php if (is_page('book-step-4')){ ?>
-     <img class= "width-80" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_4.png">
+     <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_4.png">
      <?php } ?>
      <?php if (is_page('booking-confirmation')){ ?>
-      <img class= "width-80" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_5.png">
+      <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_5.png">
       <?php } ?>
 
     </div>
