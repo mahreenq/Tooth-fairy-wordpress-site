@@ -17,11 +17,15 @@
 	// Array to get the FAQ Fields
 
   	$faqs = get_post_meta(get_the_ID(), 'wiki_test_repeat_group'); 
-
+  	echo sizeof($faqs);
+  	
 	// Acessing members of the array
 
+    if(sizeof($faqs[0]) > 0){
+
 	foreach($faqs[0] as $faq) {  
-	?>  <div>
+	?>  
+	 <div>
 	
     <!-- Wraps members of array in elements   -->
 	 <h2><?php echo $faq['title'];?></h2>
@@ -29,9 +33,10 @@
      <p><?php  echo $faq['answer'];?></p>
 	   
 	  </div>
-	   <?php
-} ?>
-		
+      <?php }}
+      else {
+            echo "no content";  }?>
+  
 
 	<?php endwhile; // end of the loop. ?>
 
@@ -39,3 +44,17 @@
 	</div><!-- #primary -->
 
 	<?php get_footer(); ?> 
+
+	<?php 
+/*
+function checksomething($arr){
+	if (sizeof($arr[0]) > 0) {
+		
+
+		# code...
+	}
+	} 
+
+checksomething($faqs);
+checksomething($questions);
+checksomething($myarrayname) 	?>
