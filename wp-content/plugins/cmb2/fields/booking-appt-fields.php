@@ -39,7 +39,6 @@ $cmb->add_group_field( $group_field_id, array(
 ) );
 
 
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Sub Heading',
     'description' => 'ex. Step 1 ...',
