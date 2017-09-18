@@ -726,7 +726,11 @@ object {
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
+.text-center {
+  text-align: center; }
+
 /* Front page */
+/* Contact Page */
 /*--------------------------------------------------------------
 # Flex
 --------------------------------------------------------------*/
@@ -863,6 +867,9 @@ object {
 .yellow-bkg {
   background-color: #FFD466; }
 
+.width-10 {
+  width: 10%; }
+
 .width-25 {
   width: 25%; }
 
@@ -888,7 +895,7 @@ object {
   padding: 2em; }
 
 .padding-xlg {
-  padding: 3em; }
+  padding: 5em; }
 
 .padding-top-sm {
   padding-top: .5em; }
@@ -900,7 +907,7 @@ object {
   padding-top: 2em; }
 
 .padding-top-xl {
-  padding-top: 3em; }
+  padding-top: 5em; }
 
 .padding-right-sm {
   padding-right: .5em; }
@@ -912,7 +919,7 @@ object {
   padding-right: 2em; }
 
 .padding-right-xlg {
-  padding-right: 3em; }
+  padding-right: 5em; }
 
 .padding-left-sm {
   padding-left: .5em; }
@@ -924,7 +931,7 @@ object {
   padding-left: 2em; }
 
 .padding-left-xlg {
-  padding-left: 3em; }
+  padding-left: 5em; }
 
 .padding-bottom-sm {
   padding-bottom: .5em; }
@@ -936,4 +943,7 @@ object {
   padding-bottom: 2em; }
 
 .padding-bottom-xlg {
-  padding-bottom: 3em; }
+  padding-bottom: 5em; }
+
+.contact-padding {
+  padding: 2em 5em 2em 5em; }
