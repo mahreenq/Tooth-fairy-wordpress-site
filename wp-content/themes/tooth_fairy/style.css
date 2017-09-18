@@ -779,3 +779,66 @@ object {
 .flex-basis-50 {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
+
+.padding-xsm {
+  padding: .1em; }
+
+.padding-sm {
+  padding: .5em; }
+
+.padding-med {
+  padding: 1em; }
+
+.padding-lg {
+  padding: 2em; }
+
+.padding-xlg {
+  padding: 3em; }
+
+.padding-top-sm {
+  padding-top: .5em; }
+
+.padding-top-med {
+  padding-top: 1em; }
+
+.padding-top-lg {
+  padding-top: 2em; }
+
+.padding-top-xl {
+  padding-top: 3em; }
+
+.padding-right-sm {
+  padding-right: .5em; }
+
+.padding-right-med {
+  padding-right: 1em; }
+
+.padding-right-lg {
+  padding-right: 2em; }
+
+.padding-right-xlg {
+  padding-right: 3em; }
+
+.padding-left-sm {
+  padding-left: .5em; }
+
+.padding-left-med {
+  padding-left: 1em; }
+
+.padding-left-lg {
+  padding-left: 2em; }
+
+.padding-left-xlg {
+  padding-left: 3em; }
+
+.padding-bottom-sm {
+  padding-bottom: .5em; }
+
+.padding-bottom-med {
+  padding-bottom: 1em; }
+
+.padding-bottom-lg {
+  padding-bottom: 2em; }
+
+.padding-bottom-xlg {
+  padding-bottom: 3em; }
