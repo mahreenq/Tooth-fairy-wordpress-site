@@ -24,6 +24,8 @@
 	  <i class="fa fa-facebook" aria-hidden="true"></i>
 	  <i class="fa fa-twitter" aria-hidden="true"></i>
 	  <i class="fa fa-phone" aria-hidden="true"></i>
+	  <i class="fa fa-envelope-o" aria-hidden="true"></i>
+
 
 
 
