@@ -413,6 +413,32 @@ table {
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* Contact forms */
+input {
+  margin-top: 0.5rem; }
+
+.wpcf7-radio {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+input[type="submit"] {
+  background-color: #FFD466;
+  border: none;
+  color: #fff; }
+
+input[type="date"] {
+  background-color: #FFD466; }
+
+input[type="number"] {
+  width: 50px; }
+
+.lg-blue-bkg input[type="submit"] {
+  background-color: #68B7E7;
+  border: none;
+  color: #fff; }
+
 /* Buttons */
 button,
 input[type="button"],
@@ -736,27 +762,6 @@ object {
   bottom: 0; }
 
 /* Contact Page */
-/* Contact forms */
-input {
-  margin-top: 0.5rem; }
-
-.wpcf7-radio {
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
-
-input[type="submit"] {
-  background-color: #FFD466;
-  border: none;
-  color: #fff; }
-
-input[type="date"] {
-  background-color: #FFD466; }
-
-input[type="number"] {
-  width: 50px; }
-
 /*--------------------------------------------------------------
 # Flex
 --------------------------------------------------------------*/

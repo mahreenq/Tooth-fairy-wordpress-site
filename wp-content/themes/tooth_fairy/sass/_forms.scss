@@ -1,6 +1,32 @@
 /*--------------------------------------------------------------
 # Forms
 --------------------------------------------------------------*/
+/* Contact forms */
+input {
+margin-top: 0.5rem;
+}
+.wpcf7-radio{
+display:flex;
+flex-direction: column;
+}
+input[type="submit"] {
+   background-color: $yellow;
+   border: none;
+   color: $white;
+}
+input[type="date"] {
+  background-color: $yellow;
+}
+input[type="number"] {
+ width: 50px;
+}
+.lg-blue-bkg {
+  input[type="submit"] {
+     background-color: $med-blue-bkg;
+     border: none;
+     color: $white;
+  }
+}
 
 /* Buttons */
 
