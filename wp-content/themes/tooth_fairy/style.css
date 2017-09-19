@@ -293,6 +293,9 @@ th {
 .grey-font {
   color: #4c4c4c; }
 
+.black-font {
+  color: #000; }
+
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
@@ -773,6 +776,13 @@ object {
 /* Res Page */
 .res-banner {
   height: 30vh; }
+
+/* Pricing */
+.border-radius {
+  border-radius: .5rem .5rem 0 0; }
+
+.border-right-blue {
+  border-right: 0.2em solid #BEE2E7; }
 
 /*--------------------------------------------------------------
 # Flex

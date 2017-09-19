@@ -25,3 +25,10 @@
 .res-banner{
   height: 30vh;
 }
+/* Pricing */
+.border-radius{
+  border-radius: .5rem .5rem 0 0;
+}
+.border-right-blue{
+  border-right: .2em solid $pricing-blue;
+}
