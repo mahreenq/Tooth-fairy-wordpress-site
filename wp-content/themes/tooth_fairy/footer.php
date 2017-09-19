@@ -12,7 +12,7 @@
 <footer id="colophon" class="site-footer" role="contentinfo">
 	<div class="site-info">
 
-		<div id="secondary" class="widget-area" role="complementary">
+		<div class="secondary lg-blue-bkg " class="widget-area" role="complementary">
 		<?php dynamic_sidebar( 'footer' ); ?>
 		</div><!-- #secondary -->
 
