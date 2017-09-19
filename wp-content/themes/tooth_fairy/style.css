@@ -1041,4 +1041,6 @@ object {
   .d-white-font {
     color: #fff; }
   .res-banner {
-    height: 80vh; } }
+    height: 80vh; }
+  .d-hide {
+    display: none; } }
