@@ -44,10 +44,7 @@
 	</div><!-- #primary -->
  
 
-
 	<?php get_footer(); ?> 
-
-
 
 
     <script type="text/javascript">
