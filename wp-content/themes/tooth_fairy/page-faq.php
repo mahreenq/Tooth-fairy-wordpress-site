@@ -28,7 +28,6 @@
 
     <!-- Wraps members of array in elements   -->
     	 <div data-collapse>
-
 	 <h4><?php  echo $faq['question'];?></h4>
      <p><?php  echo $faq['answer'];?></p>
 	   </div>
@@ -55,6 +54,9 @@
              jqc.src = "https://rawgit.com/danielstocks/jQuery-Collapse/master/src/jquery.collapse.js";
               document.getElementsByTagName('head')[0].appendChild(jqc);
 
+
     		}
     	});
     </script>
+
+    
