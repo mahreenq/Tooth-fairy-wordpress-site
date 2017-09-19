@@ -250,6 +250,12 @@ $cmb->add_field( array(
 	'type' => 'text',
 ) );
 
+$cmb->add_field( array(
+	'name' => 'Payments Accepted',
+	'id'   => 'payments-pricing',
+	'type' => 'text',
+) );
+
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_4',
 	'type'        => 'group',
@@ -264,8 +270,8 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Payments Accepted',
-	'id'   => 'payments-pricing',
+	'name' => 'Payment Type',
+	'id'   => 'payments-type-pricing',
 	'type' => 'text',
 ) );
 };
