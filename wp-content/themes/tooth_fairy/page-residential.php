@@ -36,7 +36,7 @@ while($i < 4) {
 		<?php
 	} ?>
 </div>
-<?php }elseif ($i === 3){ ?>
+<?php }elseif ($i === 3){?>
 	<div class="padding-lg lg-yellow-bkg flex text-center direction-column">
 	<?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
 			<h3 class="margin-auto"><?php	print_r($servicesTitle[0]); ?> </h3>
@@ -46,23 +46,42 @@ while($i < 4) {
 			<div class="width-25">
 				<img src= "<?php echo $services['image-res']; ?>">
 			</div>
-			<h4 class="padding-left-med"><?php echo $services['title-res'];?></h4>
+			<div data-collapse>
+				<div class="flex">
+			<h4 class="padding-left-med black-font"><?php echo $services['title-res'];?>
+			<i class="fa fa-angle-down padding-left-sm" aria-hidden="true"></i>
+		</h4>
 		</div>
 		<div class="direction-column" >
 			<p><?php echo $services['description-1']; ?></p>
 			<p><?php echo $services['description-2']; ?></p>
 			<p><?php echo $services['description-3']; ?></p>
 		</div>
+	</div>
+</div>
 		<?php
 	} ?>
-	</div>
+
 <?php }
 $i++;} ?>
-</div>
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'scheduleApp');?>
           <button class="white-font yellow-bkg"> <?php echo $bookRes[0]?> </button>
 <?php
     $bookCorp = get_post_meta( get_the_ID(), 'corpApp');?>
     <p> <?php echo $bookCorp[0]?></p>
+</div>
 <?php get_footer(); ?>
+
+
+<script type="text/javascript">
+
+          jQuery(document).ready(function() {
+           if (jQuery(window).width() < 480){
+               var jqc = document.createElement('script');
+            jqc.src = "https://rawgit.com/danielstocks/jQuery-Collapse/master/src/jquery.collapse.js";
+             document.getElementsByTagName('head')[0].appendChild(jqc);
+
+           }
+       });
+   </script>
