@@ -6,6 +6,7 @@ get_header();
 // About Pricing ===================================
     $price = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
     if(sizeof($price[0]) > 0){
+        echo "<div>";
     foreach($price[0] as $main_pricing) {
     	echo "<h1 class='text-center'>";
         echo $main_pricing['pricing-title'];
@@ -17,6 +18,7 @@ get_header();
         // echo $main_pricing['savings-title'];
         // echo "</h2>";
         }
+        echo "</div>";
 }
 else{
     echo "no content";
@@ -27,7 +29,7 @@ else{
 
 <?php
 // Savings =========================================
-echo "<div class='flex direction-row justify-between border-radius white-font med-blue-bkg padding-sm'>";
+echo "<div class='flex direction-row justify-between border-radius white-font med-blue-bkg padding-left-med'>";
 $price_category = get_post_meta( get_the_ID(), 'category-title-pricing');
     echo "<h3>";
     echo $price_category[0];
@@ -46,7 +48,7 @@ echo "</div>";
 
 $price_category = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
 if(sizeof($price_category[0]) > 0){
-    echo "<ul class='price-list lg-blue-bkg padding-sm'>";
+    echo "<ul class='price-list lg-blue-bkg padding-left-med'>";
 foreach($price_category[0] as $main_pricing_2) {
 	echo "<li class='flex direction-row justify-between'>";
 	echo "<div class='border-right-blue width-75'>";
@@ -73,17 +75,12 @@ else{
 // Insurance ====================================
 $main_pricing_3 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_3');
     if(sizeof($main_pricing_3[0]) > 0){
-        echo "<div>";
+        echo "<div class='padding-top-lg'>";
     foreach($main_pricing_3[0] as $main_pricing_3) {
-    	echo "<h2 class='text-center blue-font'>";
-        echo $main_pricing_3['insurance-title-pricing'];
-        echo "</h2>";
-        echo "<p>";
-        echo $main_pricing_3['insurance-info-pricing'];
-        echo "</p>";
-        echo "<p class='text-center'>";
-        echo $main_pricing_3['search-bar-message-pricing'];
-        echo "</p>";
+    	echo "<h2 class='text-center blue-font'>".
+        $main_pricing_3['insurance-title-pricing']."</h2>";
+        echo "<p class='padding-top-med'>".$main_pricing_3['insurance-info-pricing']."</p>";
+        echo "<p><strong>".$main_pricing_3['search-bar-message-pricing']."</p></strong>";
     }
         echo "</div>";
 }
@@ -104,11 +101,11 @@ foreach ($auto[0] as $a) {
 }
 ?>
 
-<div class="ui-widget flex justify-center direction-column">
-    <div class="flex justify-center">
+<div class="ui-widget flex justify-center direction-column padding-left-med">
+    <div>
       <label for="tags"></label>
-      <input id="tags">
-      <input type="submit" name="" id="search_button">
+      <input id="tags" class="width-75">
+      <input type="submit" name="search" id="search_button">
     </div>
   <p id="result"></p>
 </div>
@@ -144,12 +141,12 @@ foreach ($auto[0] as $a) {
 <?php
 // Payment ================================================
 $main_pricing_4 = get_post_meta( get_the_ID(), 'payment-methods-pricing');
-    echo "<h2 class='text-center blue-font'>";
+    echo "<h2 class='text-center blue-font padding-bottom-med'>";
     echo $main_pricing_4[0];
     echo "</h2>";
 
 $main_pricing_4 = get_post_meta( get_the_ID(), 'payments-not-pricing');
-    echo "<div>";
+    echo "<div class='padding-bottom-med'>";
     echo $main_pricing_4[0];
     echo "</div>";
 
@@ -159,9 +156,7 @@ if(sizeof($main_pricing_4[0]) > 0){
     	echo "<h2 class='text-center blue-font'>";
         echo $main_pricing_4['payment-methods-pricing'];
         echo "</h2>";
-        echo "<p>";
         echo $main_pricing_4['payments-not-pricing'];
-        echo "</p>";
         echo $main_pricing_4['payments-pricing'];
     }
 }
@@ -178,7 +173,7 @@ $main_pricing_5 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 if(sizeof($main_pricing_5[0]) > 0){
         echo "<div class='flex direction-row'>";
         foreach($main_pricing_5[0] as $main_pricing_5) {
-        	echo "<div >";
+        	echo "<div class='width-10'>";
             echo "<img src=".$main_pricing_5['payments-cards-pricing'].">";
             echo "</div>";
          	}
@@ -203,8 +198,8 @@ foreach($main_pricing_6[0] as $main_pricing_6) {
     echo "</h2>";
     echo "</br>";
     echo $main_pricing_6['discounts-main-pricing'];
-    echo "</br>";
-    echo "<img src=".$main_pricing_6['discounts-image-pricing'].">";
+    // echo "</br>";
+    // echo "<img src=".$main_pricing_6['discounts-image-pricing'].">";
     }
 }
 else{
