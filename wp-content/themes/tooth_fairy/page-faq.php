@@ -28,7 +28,7 @@
 
     <!-- Wraps members of array in elements   -->
     	 <div data-collapse>
-	 <h4><?php  echo $faq['question'];?></h4>
+	 <h4 class="padding-sm"><?php  echo $faq['question'];?></h4>
      <p><?php  echo $faq['answer'];?></p>
 	   </div>
 	  </div>
@@ -58,5 +58,3 @@
     		}
     	});
     </script>
-
-    
