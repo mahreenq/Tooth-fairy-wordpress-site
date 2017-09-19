@@ -15,10 +15,11 @@ if(sizeof($bannerCorp[0]) > 0){
 <?php
   $i = 2;
     while($i < 4) {
+      if ($i===2) {
       $servicesTitle = get_post_meta( get_the_ID(), 'services-corp_'.$i);
         		print_r($servicesTitle[0]);
       $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
-      if(sizeof($serviceRes[0]) > 0){
+
       foreach($serviceRes[0] as $services) { ?>
     		<div>
     			<img src= "<?php echo $services['image-corp']; ?>">
@@ -28,7 +29,21 @@ if(sizeof($bannerCorp[0]) > 0){
           <p><?php echo $services['description-4']; ?></p>
     		</div>
     		<?php
-    	}}
+    	}} else if ($i===3) {
+        $servicesTitle = get_post_meta( get_the_ID(), 'services-corp_'.$i); ?>
+          	<h3 class="show1"> <?php	print_r($servicesTitle[0]); ?> <h3>
+         <?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
+
+        foreach($serviceRes[0] as $services) { ?>
+      		<div class="hide1">
+      			<img src= "<?php echo $services['image-corp']; ?>">
+      			<h4><?php echo $services['description-1'];?></h4>
+      			<p><?php echo $services['description-2']; ?></p>
+            <p><?php echo $services['description-3']; ?></p>
+            <p><?php echo $services['description-4']; ?></p>
+      		</div>
+
+  <?php    }}
       $i++;
     }?>
   <?php  ?>
