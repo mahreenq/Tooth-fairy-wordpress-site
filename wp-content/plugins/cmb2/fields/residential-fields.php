@@ -184,6 +184,11 @@ $cmb->add_group_field( $group_field_id, array(
     'id'   => 'description-3',
     'type' => 'text',
 ) );
+$cmb->add_field( array(
+	'name' => 'Link For pricing',
+	'id'   => 'link-price',
+	'type' => 'text',
+) );
 }?>
 <?php
 add_action( 'cmb2_admin_init', 'cmb2_residential_banner_4');

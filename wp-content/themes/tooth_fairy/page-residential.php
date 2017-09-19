@@ -49,7 +49,7 @@ while($i < 4) {
 			<div data-collapse>
 				<div class="flex">
 			<h4 class="padding-left-med black-font"><?php echo $services['title-res'];?>
-			<i class="fa fa-angle-down padding-left-sm" aria-hidden="true"></i>
+			<i class="fa fa-angle-down padding-left-sm d-hide" aria-hidden="true"></i>
 		</h4>
 		</div>
 		<div class="direction-column" >
