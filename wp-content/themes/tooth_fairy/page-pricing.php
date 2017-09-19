@@ -27,14 +27,14 @@ else{
 
 <?php
 // Savings =========================================
-echo "<div class='flex direction-row justify-between border-radius white-font med-blue-bkg'>";
+echo "<div class='flex direction-row justify-between border-radius white-font med-blue-bkg padding-sm'>";
 $price_category = get_post_meta( get_the_ID(), 'category-title-pricing');
     echo "<h3>";
     echo $price_category[0];
     echo "</h3>";
 
 $price_category = get_post_meta( get_the_ID(), 'our-price_title-pricing');
-    echo "<h3>";
+    echo "<h3 class='width-25 text-center'>";
     echo $price_category[0];
     echo "</h3>";
 
@@ -46,13 +46,13 @@ echo "</div>";
 
 $price_category = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
 if(sizeof($price_category[0]) > 0){
-    echo "<ul class='price-list lg-blue-bkg'>";
+    echo "<ul class='price-list lg-blue-bkg padding-sm'>";
 foreach($price_category[0] as $main_pricing_2) {
 	echo "<li class='flex direction-row justify-between'>";
-	echo "<div class='border-right-blue'>";
+	echo "<div class='border-right-blue width-75'>";
     echo $main_pricing_2['category-pricing'];
     echo "</div>";
-    echo "<div>";
+    echo "<div class='text-center width-25'>";
     echo $main_pricing_2['our-price-pricing'];
   	echo "</div>";
     // echo "<div>";

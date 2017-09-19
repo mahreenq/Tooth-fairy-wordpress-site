@@ -71,7 +71,7 @@ $cmb = new_cmb2_box( array(
     'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
     'show_names'   => true, // Show field names on the left
 ) );
-echo "<div class='prices'>";
+
 	$cmb->add_field( array(
 		'name' => 'Category',
 		'id'   => 'category-title-pricing',
@@ -89,7 +89,6 @@ echo "<div class='prices'>";
 		'id'   => 'their-price-title-pricing',
 		'type' => 'text',
 	) );
-echo "</div>";
 
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_2',
