@@ -1,8 +1,14 @@
-<?php /* Template Name: FrontPage*/ ?>
-
 <?php
-get_header();
-?>
+/* Template Name: FrontPage*/
+/**
+ * The template for displaying all single posts.
+ *
+ * @package RED_Starter_Theme
+ */
+
+get_header(); ?>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
 <?php
 $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 	foreach($bannerFront[0] as $info) { ?>
@@ -75,4 +81,7 @@ $frontFifth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 <?php while ( have_posts() ) : the_post();
 	the_content();
 endwhile; ?>
+</main><!-- #main -->
+</div><!-- #primary -->
+
 <?php get_footer(); ?>

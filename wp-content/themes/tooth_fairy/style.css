@@ -766,6 +766,9 @@ button {
 .margin-auto {
   margin: auto; }
 
+a:visited {
+  color: black; }
+
 /* Front page */
 .home-banner {
   height: 20vh; }
@@ -791,9 +794,22 @@ button {
 .border-right-blue {
   border-right: 0.1em solid #BEE2E7; }
 
+.border-blue {
+  border: 0.1em solid #BEE2E7; }
+
+.m-hide {
+  display: none; }
+
 /* FAQ */
 h4.open:after {
   content: "\f106"; }
+
+/*blog */
+.height-50 {
+  height: 50vh; }
+
+.blog-title-margin {
+  margin-top: 5%; }
 
 /*--------------------------------------------------------------
 # Flex
@@ -954,6 +970,7 @@ h4.open:after {
 .yellow-bkg {
   background-color: #FFD466; }
 
+/* WIDTH */
 .width-10 {
   width: 10%; }
 
@@ -972,6 +989,7 @@ h4.open:after {
 .width-100 {
   width: 100%; }
 
+/* PADDING */
 .padding-xsm {
   padding: .1em; }
 
@@ -1044,6 +1062,13 @@ h4.open:after {
 .home-padding {
   padding: 3em 1em 3em 1em; }
 
+/* MARGIN */
+.margin-top-med {
+  margin-top: 2em; }
+
+.margin-bottom-med {
+  margin-bottom: 2em; }
+
 @media only screen and (min-width: 600px) {
   .absolute {
     position: absolute; }
@@ -1054,4 +1079,6 @@ h4.open:after {
   .res-banner {
     height: 80vh; }
   .d-hide {
-    display: none; } }
+    display: none; }
+  .d-show {
+    display: block; } }
