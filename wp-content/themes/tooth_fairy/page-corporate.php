@@ -1,5 +1,5 @@
 <?php
-/* Template Name: Corporate*/
+/* Template Name: Residential*/
 /**
  * The template for displaying all pages.
  *
@@ -21,5 +21,3 @@ get_header(); ?>
 
   		</main><!-- #main -->
   	</div><!-- #primary -->
-
-<?php get_footer(); ?>
