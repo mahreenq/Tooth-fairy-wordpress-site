@@ -574,14 +574,23 @@ a {
 .posts-navigation .nav-previous,
 .post-navigation .nav-previous {
   float: left;
-  width: 50%; }
+  width: 50%;
+  padding: 2em; }
+
+.comment-navigation .nav-previous :hover, .comment-navigation .nav-next :hover,
+.posts-navigation .nav-previous :hover,
+.posts-navigation .nav-next :hover,
+.post-navigation .nav-previous :hover,
+.post-navigation .nav-next :hover {
+  color: #68B7E7; }
 
 .comment-navigation .nav-next,
 .posts-navigation .nav-next,
 .post-navigation .nav-next {
   float: right;
   text-align: right;
-  width: 50%; }
+  width: 50%;
+  padding: 2em; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -969,6 +978,10 @@ h4.open:after {
 
 .yellow-bkg {
   background-color: #FFD466; }
+
+.med-blue-bkg-op50 {
+  background-color: #68B7E7;
+  opacity: 0.6; }
 
 /* WIDTH */
 .width-10 {
