@@ -14,9 +14,9 @@ get_header();
         echo "<p>";
         echo $main_pricing['pricing-info'];
         echo "</p>";
-        // echo "<h2 class='text-center blue-font'>";
-        // echo $main_pricing['savings-title'];
-        // echo "</h2>";
+        echo "<h2 class='text-center blue-font m-hide d-show'>";
+        echo $main_pricing['savings-title'];
+        echo "</h2>";
         }
         echo "</div>";
 }
@@ -29,37 +29,37 @@ else{
 
 <?php
 // Savings =========================================
-echo "<div class='flex direction-row justify-between border-radius white-font med-blue-bkg padding-left-med'>";
+echo "<div class='flex direction-row justify-between border-radius white-font med-blue-bkg padding-left-med padding-top-med padding-bottom-med'>";
 $price_category = get_post_meta( get_the_ID(), 'category-title-pricing');
-    echo "<h3>";
+    echo "<h4>";
     echo $price_category[0];
-    echo "</h3>";
+    echo "</h4>";
 
 $price_category = get_post_meta( get_the_ID(), 'our-price_title-pricing');
-    echo "<h3 class='width-25 text-center'>";
+    echo "<h4 class='width-25 text-center'>";
     echo $price_category[0];
-    echo "</h3>";
+    echo "</h4>";
 
-// $price_category = get_post_meta( get_the_ID(), 'their-price-title-pricing');
-//     echo "<div>";
-//     echo $price_category[0];
-//     echo "</div>";
+$price_category = get_post_meta( get_the_ID(), 'their-price-title-pricing');
+    echo "<h4 class='m-hide d-show'>";
+    echo $price_category[0];
+    echo "</h4>";
 echo "</div>";
 
 $price_category = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
 if(sizeof($price_category[0]) > 0){
     echo "<ul class='price-list lg-blue-bkg padding-left-med'>";
 foreach($price_category[0] as $main_pricing_2) {
-	echo "<li class='flex direction-row justify-between'>";
+	echo "<li class='flex direction-row justify-between margin-top-med margin-bottom-med'>";
 	echo "<div class='border-right-blue width-75'>";
     echo $main_pricing_2['category-pricing'];
     echo "</div>";
     echo "<div class='text-center width-25'>";
     echo $main_pricing_2['our-price-pricing'];
   	echo "</div>";
-    // echo "<div>";
-    // echo $main_pricing_2['their-price-pricing'];
-    // echo "</div>";
+    echo "<div m-hide d-show>";
+    echo $main_pricing_2['their-price-pricing'];
+    echo "</div>";
     echo "</li>";
     }
     echo "</ul>";
@@ -104,7 +104,7 @@ foreach ($auto[0] as $a) {
 <div class="ui-widget flex justify-center direction-column padding-left-med">
     <div>
       <label for="tags"></label>
-      <input id="tags" class="width-75">
+      <input id="tags" class="width-75 border-blue">
       <input type="submit" name="search" id="search_button">
     </div>
   <p id="result"></p>
@@ -153,11 +153,8 @@ $main_pricing_4 = get_post_meta( get_the_ID(), 'payments-not-pricing');
 $main_pricing_4 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 if(sizeof($main_pricing_4[0]) > 0){
     foreach($main_pricing_4[0] as $main_pricing_4) {
-    	echo "<h2 class='text-center blue-font'>";
-        echo $main_pricing_4['payment-methods-pricing'];
-        echo "</h2>";
-        echo $main_pricing_4['payments-not-pricing'];
-        echo $main_pricing_4['payments-pricing'];
+        echo $main_pricing_4['payments-type-pricing'];
+        echo "</br>";
     }
 }
 else{
@@ -171,7 +168,7 @@ else{
 // Payment Card Images =============================
 $main_pricing_5 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 if(sizeof($main_pricing_5[0]) > 0){
-        echo "<div class='flex direction-row'>";
+        echo "<div class='flex direction-row justify-center'>";
         foreach($main_pricing_5[0] as $main_pricing_5) {
         	echo "<div class='width-10'>";
             echo "<img src=".$main_pricing_5['payments-cards-pricing'].">";
