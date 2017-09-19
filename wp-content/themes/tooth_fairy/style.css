@@ -762,6 +762,10 @@ object {
   bottom: 0; }
 
 /* Contact Page */
+/* Res Page */
+.res-banner {
+  height: 30vh; }
+
 /*--------------------------------------------------------------
 # Flex
 --------------------------------------------------------------*/
@@ -1014,4 +1018,6 @@ object {
   .home-banner {
     height: 80vh; }
   .d-white-font {
-    color: #fff; } }
+    color: #fff; }
+  .res-banner {
+    height: 80vh; } }
