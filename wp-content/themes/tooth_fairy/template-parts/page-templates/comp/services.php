@@ -1,49 +1,85 @@
-
-
-      <div class ="lg-blue-bkg">
-
-      <?php $servicesTitle = get_post_meta( get_the_ID(), 'services-corp_3'); ?>
-          <h3 class="padding-lg text-center"> <?php	print_r($servicesTitle[0]); ?> </h3>
-       <?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_3');
-
-      foreach($serviceRes[0] as $services) { ?>
-
-        <div class = "flex align-items-center padding-lg">
-          <img src= "<?php echo $services['image-corp']; ?>">
-          <div data-collapse>
-              <div class = "">
-               <h4 class="showdesc black-font"><?php echo $services['description-1'];?> <i class="fa fa-angle-down" aria-hidden="true"></i></h4>
-             </div>
-
-             <div class="hidedesc ">
-                  <p ><?php echo $services['description-2']; ?></p>
-                  <p ><?php echo $services['description-3']; ?></p>
-                  <p ><?php echo $services['description-4']; ?></p>
-            </div>
-          </div>
-        </div>
-
-      <?php  } ?>
-
-
+<?php $bannerRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
+if(sizeof($bannerRes[0]) > 0){
+	foreach($bannerRes[0] as $banner) { ?>
+		<div class="relative">
+		<div class="res-banner " style="background: url('<?php echo $banner['image-banner-res']; ?>'); background-size:cover;">
+			<h2 class="white-font text-center"> <?php echo $banner['title-banner-res'] ?> </h2>
+		</div>
+		<h2 class="grey-font zero-bottom home-padding absolute "> <?php echo $banner['description-banner-res'] ?></h2>
+		</div>
+		<?php
+	}} ?>
 
 <?php
-    $bookCorp = get_post_meta( get_the_ID(), 'scheduleAppCorp');?>
-          <div class="flex justify-center padding-lg">
-          <button class="med-blue-bkg white-font"> <?php echo $bookCorp[0]?> </button>
-        </div>
-        </div>
+$i = 2;
+while($i < 4) {
+	if($i === 2){ ?>
+	<div class="padding-med flex text-center direction-column">
+  <?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
+    	<h3><?php	print_r($servicesTitle[0]); ?> </h3>
+  <?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
+  foreach($serviceRes[0] as $services) { ?>
+		<div>
+			<img class="width-10 margin-auto" src= "<?php echo $services['image-res']; ?>">
+			<h4 class="yellow-font"><?php echo $services['title-res'];?></h4>
+		<div class="width-50 margin-auto">
+			<p><?php echo $services['description-1']; ?></p>
+      <p><?php echo $services['description-2']; ?></p>
+      <p><?php echo $services['description-3']; ?></p>
+			<?php $pricinglink = get_post_meta( get_the_ID(), 'service-prices'); ?>
+					<a href="#"><p class="med-blue-font"><?php	print_r($pricinglink[0]); ?> </p></a>
+		</div>
+		</div>
+		<?php
+	} ?>
+</div>
+<?php }elseif ($i === 3){?>
+	<div class="padding-lg lg-yellow-bkg flex text-center direction-column">
+	<?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
+			<h3 class="margin-auto"><?php	print_r($servicesTitle[0]); ?> </h3>
+	<?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
+	foreach($serviceRes[0] as $services) { ?>
+		<div class="flex align-items-center">
+			<div class="width-25">
+				<img src= "<?php echo $services['image-res']; ?>">
+			</div>
+			<div data-collapse>
+				<div class="flex">
+			<h4 class="padding-left-med black-font"><?php echo $services['title-res'];?>
+			<i class="fa fa-angle-down padding-left-sm d-hide" aria-hidden="true"></i>
+		</h4>
+		</div>
+		<div class="direction-column" >
+			<p><?php echo $services['description-1']; ?></p>
+			<p><?php echo $services['description-2']; ?></p>
+			<p><?php echo $services['description-3']; ?></p>
 
+		</div>
+	</div>
+</div>
+		<?php
+	} ?>
+
+<?php }
+$i++;} ?>
+<?php
+    $bookRes = get_post_meta( get_the_ID(), 'scheduleApp');?>
+          <button class="white-font yellow-bkg width-50 align-self-center justify-center"> <?php echo $bookRes[0]?> </button>
+<?php
+    $bookCorp = get_post_meta( get_the_ID(), 'corpApp');?>
+    <p> <?php echo $bookCorp[0]?></p>
+</div>
 
 
 
 <script type="text/javascript">
 
-      jQuery(document).ready(function() {
-     if (jQuery(window).width() < 480){
-       var jqc = document.createElement('script');
-          jqc.src = "https://rawgit.com/danielstocks/jQuery-Collapse/master/src/jquery.collapse.js";
-           document.getElementsByTagName('head')[0].appendChild(jqc);
-     }
-   });
- </script>
+          jQuery(document).ready(function() {
+           if (jQuery(window).width() < 480){
+               var jqc = document.createElement('script');
+            jqc.src = "https://rawgit.com/danielstocks/jQuery-Collapse/master/src/jquery.collapse.js";
+             document.getElementsByTagName('head')[0].appendChild(jqc);
+
+           }
+       });
+   </script>
