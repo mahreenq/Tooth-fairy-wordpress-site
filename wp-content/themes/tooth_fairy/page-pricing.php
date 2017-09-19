@@ -13,9 +13,9 @@ get_header();
         echo "<p>";
         echo $main_pricing['pricing-info'];
         echo "</p>";
-        echo "<h2 class='text-center blue-font'>";
-        echo $main_pricing['savings-title'];
-        echo "</h2>";
+        // echo "<h2 class='text-center blue-font'>";
+        // echo $main_pricing['savings-title'];
+        // echo "</h2>";
         }
 }
 else{
@@ -27,13 +27,29 @@ else{
 
 <?php
 // Savings =========================================
+echo "<div class='flex direction-row justify-between border-radius white-font med-blue-bkg'>";
+$price_category = get_post_meta( get_the_ID(), 'category-title-pricing');
+    echo "<h3>";
+    echo $price_category[0];
+    echo "</h3>";
+
+$price_category = get_post_meta( get_the_ID(), 'our-price_title-pricing');
+    echo "<h3>";
+    echo $price_category[0];
+    echo "</h3>";
+
+// $price_category = get_post_meta( get_the_ID(), 'their-price-title-pricing');
+//     echo "<div>";
+//     echo $price_category[0];
+//     echo "</div>";
+echo "</div>";
 
 $price_category = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
 if(sizeof($price_category[0]) > 0){
-    echo "<ul class='flex direction-column lg-blue-bkg'>";
+    echo "<ul class='price-list lg-blue-bkg'>";
 foreach($price_category[0] as $main_pricing_2) {
 	echo "<li class='flex direction-row justify-between'>";
-	echo "<div>";
+	echo "<div class='border-right-blue'>";
     echo $main_pricing_2['category-pricing'];
     echo "</div>";
     echo "<div>";
@@ -127,6 +143,16 @@ foreach ($auto[0] as $a) {
 
 <?php
 // Payment ================================================
+$main_pricing_4 = get_post_meta( get_the_ID(), 'payment-methods-pricing');
+    echo "<h2 class='text-center blue-font'>";
+    echo $main_pricing_4[0];
+    echo "</h2>";
+
+$main_pricing_4 = get_post_meta( get_the_ID(), 'payments-not-pricing');
+    echo "<div>";
+    echo $main_pricing_4[0];
+    echo "</div>";
+
 $main_pricing_4 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 if(sizeof($main_pricing_4[0]) > 0){
     foreach($main_pricing_4[0] as $main_pricing_4) {

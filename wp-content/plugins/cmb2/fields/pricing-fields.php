@@ -71,6 +71,25 @@ $cmb = new_cmb2_box( array(
     'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
     'show_names'   => true, // Show field names on the left
 ) );
+echo "<div class='prices'>";
+	$cmb->add_field( array(
+		'name' => 'Category',
+		'id'   => 'category-title-pricing',
+		'type' => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name' => 'Our Price',
+		'id'   => 'our-price_title-pricing',
+		'type' => 'text',
+	) );
+
+	$cmb->add_field( array(
+		'name' => 'Their Price',
+		'id'   => 'their-price-title-pricing',
+		'type' => 'text',
+	) );
+echo "</div>";
 
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_2',
@@ -220,10 +239,22 @@ $cmb = new_cmb2_box( array(
     'show_names'   => true, // Show field names on the left
 ) );
 
+$cmb->add_field( array(
+	'name' => 'Payment Methods Title',
+	'id'   => 'payment-methods-pricing',
+	'type' => 'text',
+) );
+
+$cmb->add_field( array(
+	'name' => 'Payments Not Accepted',
+	'id'   => 'payments-not-pricing',
+	'type' => 'text',
+) );
+
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_4',
 	'type'        => 'group',
-	'repeatable'  => false, // use false if you want non-repeatable group
+	// 'repeatable'  => false, // use false if you want non-repeatable group
 	'options'     => array(
 		'group_title'   => __( '', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
 		'add_button'    => __( 'Add Another Entry', 'cmb2' ),
@@ -234,21 +265,9 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Payment Methods Title',
-	'id'   => 'payment-methods-pricing',
-	'type' => 'text',
-) );
-
-$cmb->add_group_field( $group_field_id, array(
-	'name' => 'Payments Not Accepted',
-	'id'   => 'payments-not-pricing',
-	'type' => 'text',
-) );
-
-$cmb->add_group_field( $group_field_id, array(
 	'name' => 'Payments Accepted',
 	'id'   => 'payments-pricing',
-	'type' => 'textarea_small',
+	'type' => 'text',
 ) );
 };
 
