@@ -111,7 +111,7 @@ function wmpudev_enqueue_icon_stylesheet() {
 add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
 
 function custom_add_google_fonts() {
-wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400', false );
+wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400, 900', false );
 }
 add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
 
