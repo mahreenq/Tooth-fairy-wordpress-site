@@ -20,10 +20,10 @@ get_header(); ?>
 		                   <p> <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / BY <?php the_author(); ?> </p>
 		                </div>
 		            </div>
-		            <div>
+		            <div class="padding-lg">
 		                <?php the_excerpt(); ?>
 		            </div>
-		            <div>
+		            <div class="padding-lg">
 		                <?php echo '<a href="' . get_permalink() . '"> '?>
 		                <h6 class="padding-bottom-lg" >READ MORE -> </h6>
 		                <?php echo '</a>'; ?>
