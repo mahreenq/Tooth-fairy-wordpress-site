@@ -14,30 +14,54 @@ if(sizeof($bannerRes[0]) > 0){
 		</div>
 		<?php
 	}} ?>
-	<div class="padding-med">
+
 <?php
 $i = 2;
 while($i < 4) {
-  $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
+	if($i === 2){ ?>
+	<div class="padding-med flex text-center direction-column">
+  <?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
     	<h3><?php	print_r($servicesTitle[0]); ?> </h3>
   <?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
-	if(sizeof($serviceRes[0]) > 0){
   foreach($serviceRes[0] as $services) { ?>
 		<div>
-			<img src= "<?php echo $services['image-res']; ?>">
-			<h3><?php echo $services['title-res'];?></h3>
+			<img class="width-10 margin-auto" src= "<?php echo $services['image-res']; ?>">
+			<h4 class="yellow-font"><?php echo $services['title-res'];?></h4>
+		<div class="width-50 margin-auto">
 			<p><?php echo $services['description-1']; ?></p>
       <p><?php echo $services['description-2']; ?></p>
       <p><?php echo $services['description-3']; ?></p>
 		</div>
+		</div>
 		<?php
-	} }
-  $i++;
-}?>
+	} ?>
+</div>
+<?php }elseif ($i === 3){ ?>
+	<div class="padding-lg lg-yellow-bkg flex text-center direction-column">
+	<?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
+			<h3 class="margin-auto"><?php	print_r($servicesTitle[0]); ?> </h3>
+	<?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
+	foreach($serviceRes[0] as $services) { ?>
+		<div class="flex align-items-center">
+			<div class="width-25">
+				<img src= "<?php echo $services['image-res']; ?>">
+			</div>
+			<h4 class="padding-left-med"><?php echo $services['title-res'];?></h4>
+		</div>
+		<div class="direction-column" >
+			<p><?php echo $services['description-1']; ?></p>
+			<p><?php echo $services['description-2']; ?></p>
+			<p><?php echo $services['description-3']; ?></p>
+		</div>
+		<?php
+	} ?>
+	</div>
+<?php }
+$i++;} ?>
 </div>
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'scheduleApp');?>
-          <button> <?php echo $bookRes[0]?> </button>
+          <button class="white-font yellow-bkg"> <?php echo $bookRes[0]?> </button>
 <?php
     $bookCorp = get_post_meta( get_the_ID(), 'corpApp');?>
     <p> <?php echo $bookCorp[0]?></p>
