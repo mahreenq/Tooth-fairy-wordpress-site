@@ -87,37 +87,39 @@ foreach ($auto[0] as $a) {
 }
 ?>
 
-<div>
+<div class="ui-widget">
+  <label for="tags"></label>
+  <input id="tags">
+  <input type="submit" name="" id="search_button">
+  <p id="result"></p>
+</div>
+
   <script>
-    $( function() {
     var providers = <?php echo "[".$providers."]"; ?>;
     console.log(providers);
     $( "#tags" ).autocomplete({
       source: [<?php echo $providers;?>]
     });
-    });
 
-    var tags = document.getElementById('tags').value; 
-    tags.addEventListener("input", checkValue());
+    var search_button = document.getElementById('search_button'); 
+
+    search_button.addEventListener("click", checkValue);
 
     function checkValue(){
         var input = document.getElementById('tags').value;
-        if (providers.indexOf(input) > -1) {
-            console.log("hi");
+        console.log(input);
+        if (input == '') {
+            document.getElementById("result").innerHTML = "Please specify your provider."
+        }
+        else if (providers.indexOf(input) > -1) {
+            document.getElementById("result").innerHTML = "We accept plans from" + " " +input + ".";
         }
         else{
-            console.log("no");
+            document.getElementById("result").innerHTML = "We do not accept plans from" + " " +input + ".";
         }
     }
 
   </script>
-<?php echo $providers; ?>
-</div>
- 
-<div class="ui-widget">
-  <label for="tags"></label>
-  <input id="tags">
-</div>
 
 
 <?php
