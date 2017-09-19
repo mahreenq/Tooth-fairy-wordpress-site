@@ -282,7 +282,7 @@ th {
   color: #007944; }
 
 .red-font {
-  color: #007944; }
+  color: #ff0000; }
 
 .white-font {
   color: #fff; }
@@ -428,6 +428,11 @@ input[type="submit"] {
   border: none;
   color: #fff; }
 
+input[type="button"] {
+  background-color: #FFD466;
+  border: none;
+  color: #fff; }
+
 input[type="date"] {
   background-color: #FFD466; }
 
@@ -438,6 +443,9 @@ input[type="number"] {
   background-color: #68B7E7;
   border: none;
   color: #fff; }
+
+.wpcf7-textarea {
+  width: 80%; }
 
 /* Buttons */
 button,
@@ -751,6 +759,9 @@ object {
 .text-right {
   text-align: right; }
 
+.margin-auto {
+  margin: auto; }
+
 /* Front page */
 .home-banner {
   height: 20vh; }
@@ -936,6 +947,9 @@ object {
 
 .width-75 {
   width: 75%; }
+
+.width-80 {
+  width: 80%; }
 
 .width-100 {
   width: 100%; }
