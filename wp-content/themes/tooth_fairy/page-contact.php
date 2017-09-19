@@ -9,7 +9,7 @@ while ( have_posts() ) : the_post(); ?>
 
 <?php
 $text = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
-if(sizeof($text[0]) > 0){
+
 foreach($text[0] as $info) { ?>
   <div class="flex direction-column">
     <h2 class="padding-bottom-sm"> <?php echo $info['dentist-name']; ?> </h2>
@@ -28,7 +28,6 @@ foreach($text[0] as $info) { ?>
 </div>
 </div>
   <?php  }
-  }
 ?>
 
 <div class="lg-blue-bkg flex direction-column align-items-center">

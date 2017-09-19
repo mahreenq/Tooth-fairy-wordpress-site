@@ -3,6 +3,7 @@
 get_header();
 ?>
 <?php
+
 $bannerRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 if(sizeof($bannerRes[0]) > 0){
 	foreach($bannerRes[0] as $banner) { ?>
@@ -31,6 +32,8 @@ while($i < 4) {
 			<p><?php echo $services['description-1']; ?></p>
       <p><?php echo $services['description-2']; ?></p>
       <p><?php echo $services['description-3']; ?></p>
+			<?php $pricinglink = get_post_meta( get_the_ID(), 'service-prices'); ?>
+					<a href="#"><p class="med-blue-font"><?php	print_r($pricinglink[0]); ?> </p></a>
 		</div>
 		</div>
 		<?php
@@ -56,6 +59,7 @@ while($i < 4) {
 			<p><?php echo $services['description-1']; ?></p>
 			<p><?php echo $services['description-2']; ?></p>
 			<p><?php echo $services['description-3']; ?></p>
+
 		</div>
 	</div>
 </div>
@@ -66,7 +70,7 @@ while($i < 4) {
 $i++;} ?>
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'scheduleApp');?>
-          <button class="white-font yellow-bkg"> <?php echo $bookRes[0]?> </button>
+          <button class="white-font yellow-bkg width-50 align-self-center justify-center"> <?php echo $bookRes[0]?> </button>
 <?php
     $bookCorp = get_post_meta( get_the_ID(), 'corpApp');?>
     <p> <?php echo $bookCorp[0]?></p>
