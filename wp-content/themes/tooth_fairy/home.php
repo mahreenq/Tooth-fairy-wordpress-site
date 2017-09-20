@@ -12,11 +12,11 @@ get_header(); ?>
 			<?php while(have_posts()):the_post(); ?>
 		    	<div>
 		                <?php $backgroundImg = wp_get_attachment_image_src( get_post_thumbnail_id($post->ID), 'full' ); ?>
-		            <div class="height-50 width-100 flex direction-column justify-between" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size:cover;">
-		                <div class="med-blue-bkg-op50 flex justify-start white-font width-75 padding-med" >
-		                    <h2> <?php the_title() ?> </h2>
+		            <div class="height-50 width-100 d-width-75 flex direction-column justify-between" style="background: url('<?php echo $backgroundImg[0]; ?>'); background-size:cover;">
+		                <div class="med-blue-bkg flex justify-start white-font width-75 padding-med" >
+		                    <h2 class="white-font"> <?php the_title() ?> </h2>
 		                </div>
-		                <div class="white-font med-blue-bkg-op50 flex justify-end align-self-end">
+		                <div class="med-blue-bkg white-font flex justify-end align-self-end padding-med">
 		                   <p> <?php red_starter_posted_on(); ?> / <?php comments_number( '0 Comments', '1 Comment', '% Comments' ); ?> / BY <?php the_author(); ?> </p>
 		                </div>
 		            </div>
