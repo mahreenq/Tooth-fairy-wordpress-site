@@ -54,5 +54,3 @@
 </div> 
 
 
-
-  <script type="text/javascript" src="navbar.js"></script>

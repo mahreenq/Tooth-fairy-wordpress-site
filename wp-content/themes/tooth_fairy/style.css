@@ -453,8 +453,7 @@ input[type="submit"] {
   border-radius: 3px;
   font-size: 12px;
   font-size: 0.75rem;
-  line-height: 1;
-  padding: .6rem 1rem .4rem; }
+  padding: .6rem 2rem .4rem; }
   button:hover,
   input[type="button"]:hover,
   input[type="reset"]:hover,
@@ -1116,6 +1115,8 @@ h4.open:after {
     width: 75%; }
   .d-width-25 {
     width: 25%; }
+  .d-width-15 {
+    width: 15%; }
   /* Residential page */
   .d-direction-row-reverse {
     -ms-flex-direction: row-reverse;
