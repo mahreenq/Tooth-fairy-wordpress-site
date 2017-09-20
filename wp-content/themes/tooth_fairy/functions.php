@@ -94,6 +94,25 @@ function red_starter_scripts() {
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
 
+      // FAQ Script
+
+function faq() {
+	wp_enqueue_style( 'red-starter-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'faq-dropmenu-on-mobile', get_template_directory_uri() . '/build/js/faq.js', array(), '20130115', true );
+
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
+}
+add_action( 'wp_enqueue_scripts', 'faq' );
+
+
+
+
+
+
+
 /**
  * Custom template tags for this theme.
  */
