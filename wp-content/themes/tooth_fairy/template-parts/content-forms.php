@@ -35,6 +35,13 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'book-step-4', 'b
 <?php while ( have_posts() ) : the_post(); ?>
    <div class="flex justify-center ">
     <?php  the_content(); ?>
+    <div class="flex">
+        <div class="width-25">la</div>
+        <div class="width-25"> la</div>
+        <div class="width-25">la</div>
+        <div class="width-25">la </div>
+  </div>
+
   </div>
 			<?php endwhile; // End of the loop. ?>
 
@@ -47,6 +54,8 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'book-step-4', 'b
 <div class="flex justify-center padding-top-xl padding-bottom-xlg" >
  <?php if (is_page('book-step-1')){ ?>
   <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_1.png">
+
+
   <?php } ?>
 
   <?php if (is_page('book-step-2')){ ?>
