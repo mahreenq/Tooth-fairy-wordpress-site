@@ -1,4 +1,3 @@
-<h1> I HATE TEMPLATE PARTS </h1>
 <div class="padding-med text-center">
   <?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_2'); ?>
     	<h3 class="padding-bottom-med"><?php	print_r($servicesTitle[0]); ?> </h3>

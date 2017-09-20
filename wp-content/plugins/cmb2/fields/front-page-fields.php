@@ -32,13 +32,13 @@ $group_field_id = $cmb->add_field( array(
 
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Banner Image',
-	'id'   => 'banner-front',
+	'id'   => 'banner-img',
 	'type' => 'file',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Slogan',
-	'id'   => 'slogan-front',
+	'id'   => 'banner-subtitle',
 	'type' => 'text',
 ) );
 
