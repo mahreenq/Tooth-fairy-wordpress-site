@@ -49,8 +49,6 @@
 
 	<?php get_footer(); ?> 
 
-     <script type="text/javascript" src="js/faq.js"></script>
-
  
      <style type="text/css">
    h4.open:after {
