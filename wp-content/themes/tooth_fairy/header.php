@@ -32,35 +32,27 @@
 				</div><!-- .site-branding -->
 
 				<nav id="site-navigation" class="main-navigation" role="navigation">
-					<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
-					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+					
 				</nav><!-- #site-navigation -->
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
 
-	<ul>
-		<li>
-			<a href="#link">Parent 1</a>
-		</li>
-		<li class="menu-item-has-children">
-			<a href="#link">Parent 2</a>
-			<ul class="sub-menu">
-				<li>
-					<a href="#link">Child 1</a>
-				</li>
-				<li>
-					<a href="#link">Child 2</a>
-				</li>
-				<li>
-					<a href="#link">Child 3</a>
-				</li>
-			</ul>
-		</li>
-		<li>
-			<a href="#link">Parent 3</a>
-		</li>
-	</ul>
-</div>
+	
+  <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</nav>
+</header>
+
+<div class="menu">
+  <ul>
+    <a href="#"><li>Our Services</li></a>
+    <a href="#"><li>About</li></a>
+    <a href="#"><li>Contact</li></a>
+    <a href="#"><li>Blog</li></a>
+  </ul>
+</div> 
+
+
 
   <script type="text/javascript" src="navbar.js"></script>
