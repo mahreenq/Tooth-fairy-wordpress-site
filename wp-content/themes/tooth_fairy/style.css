@@ -800,6 +800,9 @@ a:visited {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap; }
 
+.hideservices {
+  display: none; }
+
 /* Pricing */
 .border-radius {
   border-radius: .5rem .5rem 0 0; }
@@ -986,6 +989,12 @@ h4.open:after {
 .yellow-bkg {
   background-color: #FFD466; }
 
+.grey-bkg {
+  background-color: #EFEFEF; }
+
+.drk-grey-bkg {
+  background-color: #D8D8D8; }
+
 /* WIDTH */
 .width-10 {
   width: 10%; }
@@ -1072,9 +1081,6 @@ h4.open:after {
 .padding-side-sm {
   padding: 0 1em 0 1em; }
 
-.contact-padding {
-  padding: 2em 5em 2em 5em; }
-
 .home-padding {
   padding: 3em 1em 3em 1em; }
 
@@ -1104,6 +1110,8 @@ h4.open:after {
     width: 30%; }
   .d-width-75 {
     width: 75%; }
+  .d-width-25rem {
+    width: 25rem; }
   /* Residential page */
   .d-direction-row-reverse {
     -ms-flex-direction: row-reverse;
@@ -1117,4 +1125,8 @@ h4.open:after {
   .d-text-start {
     text-align: start; }
   .d-text-end {
-    text-align: end; } }
+    text-align: end; }
+  .d-text-center {
+    text-align: center; }
+  .hideservices {
+    display: block; } }

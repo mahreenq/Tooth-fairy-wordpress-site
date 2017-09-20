@@ -29,28 +29,29 @@
 	.d-width-25rem{
 		width:25rem;
 	}
-/* Residential page */
-.d-direction-row-reverse{
-	flex-direction: row-reverse;
-}
-.d-direction-row{
-	flex-direction: row;
-}
-.res-wrap{
-	flex-wrap: nowrap;
-}
-.d-text-start{
-	text-align: start;
-}
-.d-text-end{
-	text-align: end;
-}
-.d-text-center{
-	text-align:center;
-}
-.hideservices{
-display:block;
-}
+	/* Residential page */
+	.d-direction-row-reverse{
+		flex-direction: row-reverse;
+	}
+	.d-direction-row{
+		flex-direction: row;
+	}
+	.res-wrap{
+		flex-wrap: nowrap;
+	}
+	.d-text-start{
+		text-align: start;
+	}
+	.d-text-end{
+		text-align: end;
+	}
+	
+	.d-text-center{
+		text-align:center;
+	}
+	.hideservices{
+	display:block;
+	}
 }
 @media only screen and (min-width: 1000px) {
 
