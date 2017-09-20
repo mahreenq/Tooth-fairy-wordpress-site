@@ -117,6 +117,11 @@ $cmb->add_group_field( $group_field_id, array(
     'id'   => 'description-3',
     'type' => 'text',
 ) );
+$cmb->add_group_field( $group_field_id, array(
+    'name' => 'Description line 4',
+    'id'   => 'description-4',
+    'type' => 'text',
+) );
 $cmb->add_field( array(
 	'name' => 'Our prices',
 	'id'   => 'service-prices',

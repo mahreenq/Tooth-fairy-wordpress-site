@@ -20,7 +20,6 @@
 		<div  class="flex direction-column">
 		 <div class="flex">
 
-
 			<div><h4 class="padding-left-med black-font show" data-toggle="service<?php echo $key ?>"><?php echo $services['title-res'];?>
 			<i class="fa fa-angle-down padding-left-sm d-hide" aria-hidden="true"></i>
     </h4>
@@ -29,7 +28,6 @@
 		</div>
 
 		<div class="text-left padding-lg hideservices" id="service<?php echo $key ?>" >
-
 
 			<p><?php echo $services['description-1']; ?></p>
 			<p><?php echo $services['description-2']; ?></p>
