@@ -769,6 +769,9 @@ button {
 .text-right {
   text-align: right; }
 
+.text-left {
+  text-align: left; }
+
 .margin-auto {
   margin: auto; }
 
@@ -792,6 +795,10 @@ a:visited {
 
 .border-top {
   border-top: 0.1em solid #4c4c4c; }
+
+.res-wrap {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
 
 /* Pricing */
 .border-radius {
@@ -1096,4 +1103,18 @@ h4.open:after {
   .width-30 {
     width: 30%; }
   .d-width-75 {
-    width: 75%; } }
+    width: 75%; }
+  /* Residential page */
+  .d-direction-row-reverse {
+    -ms-flex-direction: row-reverse;
+        flex-direction: row-reverse; }
+  .d-direction-row {
+    -ms-flex-direction: row;
+        flex-direction: row; }
+  .res-wrap {
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap; }
+  .d-text-start {
+    text-align: start; }
+  .d-text-end {
+    text-align: end; } }

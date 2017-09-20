@@ -86,50 +86,34 @@ foreach ($auto[0] as $a) {
 ?>
 
 <div class="ui-widget flex direction-column padding-bottom-med">
-    <div class="flex direction-row">
-      <input id="tags" class="width-75 border-blue padding-sm">
-      <div id="search_button" class="padding-sm"><i class="fa fa-search " aria-hidden="true"></i></div>
+    <div class="flex direction-row justify-center padding-md">
+      <input id="tags" class="width-100 border-blue padding-sm" style="background-image: url('http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/search.svg'); background-size: 2rem; background-repeat: no-repeat; background-position: 98%;">
     </div>
-  <p id="result" style=display: hidden> We accept plans from <span id="accept"></span>. </p>
+  <div id="result"></div>
 </div>
 
   <script>
     var providers = <?php echo "[".$providers."]"; ?>;
-    console.log(providers);
     $( "#tags" ).autocomplete({
-      source: [<?php echo $providers;?>]
+      source: providers,
+      response: function(event, ui){
+        if (ui.content.length === 0) {
+            $("#result").html('<p class="red-font">' + "No results found" + '</p>');
+        } else {
+            $("#result").html('<p class="green-font">' + "We accept plans from" + " " + '<span id="accept"></span>' + '</p>');
+        }
+      }
     });
-    /*
-    var search_button = document.getElementById('search_button'); 
 
-    search_button.addEventListener("click", checkValue);
-
-    function checkValue(){
-        var input = document.getElementById('tags').value;
-        console.log(input);
-        if (input == '') {
-            document.getElementById("result").innerHTML = "<p class='red-font'>Please specify your provider.</p>"
-        }
-        else if (providers.indexOf(input) > -1) {
-            document.getElementById("result").innerHTML = "<p class='green-font'>We accept plans from" + " " +input + ".</p>";
-        }
-        else{
-            document.getElementById("result").innerHTML = "<p class='red-font'>We do not accept plans from" + " " +input + ".</p>";
-        }
-    }
-    */
     $(document).ready(function () {
         $(".ui-autocomplete").on("click",function (e){
-            var inputVal = $("#tags").val()
             $("#result").show();
+            var inputVal = $("#tags").val()
             $("#accept").text(inputVal);
         })
     })
 
   </script>
-
-
-
 
 <?php
 // =====================Payment===========================

@@ -8,7 +8,10 @@ button {
   text-align: center;
 }
 .text-right{
-     text-align:right;
+  text-align:right;
+}
+.text-left{
+  text-align:left;
 }
 .margin-auto{
   margin:auto;
@@ -33,6 +36,9 @@ a:visited {
 }
 .border-top{
   border-top: .1em solid $grey;
+}
+.res-wrap{
+  flex-wrap: wrap;
 }
 /* Pricing */
 .border-radius{
