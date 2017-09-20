@@ -3,10 +3,7 @@ jQuery(function($){
     	     $('.responsive-menu').toggleClass('expand')
     	     })
         })
-</script>	
 
-
-<script>
 	jQuery(document).ready(function($){
 	    $(".menu-item-has-children").append("<div class='open-menu-link open'>+</div>");
 	    $('.menu-item-has-children').append("<div class='open-menu-link close'>-</div>");
@@ -28,4 +25,4 @@ jQuery(function($){
 	        }
 	    });
 	});
-</script>
+
