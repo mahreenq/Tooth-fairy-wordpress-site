@@ -85,13 +85,12 @@ foreach ($auto[0] as $a) {
 }
 ?>
 
-<div class="ui-widget flex justify-center direction-column padding-left-med padding-bottom-med">
-    <div>
-      <label for="tags"></label>
-      <input id="tags" class="width-75 border-blue">
-      <input type="submit" name="search" id="search_button">
+<div class="ui-widget flex direction-column padding-bottom-med">
+    <div class="flex direction-row">
+      <input id="tags" class="width-75 border-blue padding-sm">
+      <div id="search_button" class="padding-sm"><i class="fa fa-search " aria-hidden="true"></i></div>
     </div>
-  <p id="result"></p>
+  <p id="result" style=display: hidden> We accept plans from <span id="accept"></span>. </p>
 </div>
 
   <script>
@@ -100,7 +99,7 @@ foreach ($auto[0] as $a) {
     $( "#tags" ).autocomplete({
       source: [<?php echo $providers;?>]
     });
-
+    /*
     var search_button = document.getElementById('search_button'); 
 
     search_button.addEventListener("click", checkValue);
@@ -118,6 +117,14 @@ foreach ($auto[0] as $a) {
             document.getElementById("result").innerHTML = "<p class='red-font'>We do not accept plans from" + " " +input + ".</p>";
         }
     }
+    */
+    $(document).ready(function () {
+        $(".ui-autocomplete").on("click",function (e){
+            var inputVal = $("#tags").val()
+            $("#result").show();
+            $("#accept").text(inputVal);
+        })
+    })
 
   </script>
 
