@@ -13,8 +13,8 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
   <div class="flex direction-column d-direction-row">
-  <div class="padding-lg">
-    <div class= "padding-bottom-lg width-75">
+  <div class="padding-xlg">
+    <div class= "padding-bottom-lg width-100 d-width-75">
 <?php the_post_thumbnail(); ?>
   </div>
 <?php
@@ -36,7 +36,7 @@ foreach($text[0] as $info) { ?>
   <?php  }
 ?>
 
-<div class="lg-blue-bkg flex direction-column align-items-center">
+<div class="lg-blue-bkg flex direction-column align-items-center padding-bottom-lg">
   <?php
       $title = get_post_meta( get_the_ID(), 'formTitle');?>
         <h2 class="padding-lg text-center"> <?php echo $title[0]?> </h2>
