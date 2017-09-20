@@ -21,7 +21,7 @@
     		<div class="res-banner " style="background: url('<?php echo $banner['banner-img']; ?>'); background-size:cover;">
     			<h2 class="white-font text-center"> <?php echo $banner['banner-title'] ?> </h2>
     		</div>
-    		<h2 class="grey-font zero-bottom home-padding absolute "> <?php echo $banner['banner-subtitle'] ?></h2>
+    		<h2 class="grey-font zero-bottom home-padding absolute d-white-font"> <?php echo $banner['banner-subtitle'] ?></h2>
     		</div>
     		<?php
     	}} ?>

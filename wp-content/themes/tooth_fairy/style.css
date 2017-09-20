@@ -1112,6 +1112,10 @@ h4.open:after {
     width: 75%; }
   .d-width-25rem {
     width: 25rem; }
+  .d-width-75 {
+    width: 75%; }
+  .d-width-25 {
+    width: 25%; }
   /* Residential page */
   .d-direction-row-reverse {
     -ms-flex-direction: row-reverse;
@@ -1119,6 +1123,9 @@ h4.open:after {
   .d-direction-row {
     -ms-flex-direction: row;
         flex-direction: row; }
+  .d-direction-column {
+    -ms-flex-direction: column;
+        flex-direction: column; }
   .res-wrap {
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap; }
