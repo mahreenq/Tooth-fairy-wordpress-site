@@ -1,32 +1,10 @@
+<?php $background_color = "lg-blue-bkg"; ?>
+<?php if (is_page('residential')) {$background_color = "lg-yellow-bkg";} ?>
 
-<?php
-$i = 2;
-while($i < 4) {
-	if($i === 2){ ?>
-	<div class="padding-med flex text-center direction-column">
-  <?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
-    	<h3><?php	print_r($servicesTitle[0]); ?> </h3>
-  <?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
-  foreach($serviceRes[0] as $services) { ?>
-		<div>
-			<img class="width-10 margin-auto" src= "<?php echo $services['image-res']; ?>">
-			<h4 class="yellow-font"><?php echo $services['title-res'];?></h4>
-		<div class="width-50 margin-auto">
-			<p><?php echo $services['description-1']; ?></p>
-      <p><?php echo $services['description-2']; ?></p>
-      <p><?php echo $services['description-3']; ?></p>
-			<?php $pricinglink = get_post_meta( get_the_ID(), 'service-prices'); ?>
-					<a href="#"><p class="med-blue-font"><?php	print_r($pricinglink[0]); ?> </p></a>
-		</div>
-		</div>
-		<?php
-	} ?>
-</div>
-<?php }elseif ($i === 3){?>
-	<div class="padding-lg lg-yellow-bkg flex text-center direction-column">
-	<?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_'.$i); ?>
+	<div class="padding-lg flex text-center direction-column <?php echo $background_color?>">
+	<?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_3'); ?>
 			<h3 class="margin-auto"><?php	print_r($servicesTitle[0]); ?> </h3>
-	<?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_'.$i);
+	<?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_3'.$i);
 	foreach($serviceRes[0] as $services) { ?>
 		<div class="flex align-items-center">
 			<div class="width-25">
@@ -48,9 +26,6 @@ while($i < 4) {
 </div>
 		<?php
 	} ?>
-
-<?php }
-$i++;} ?>
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'scheduleApp');?>
           <button class="white-font yellow-bkg width-50 align-self-center justify-center"> <?php echo $bookRes[0]?> </button>
