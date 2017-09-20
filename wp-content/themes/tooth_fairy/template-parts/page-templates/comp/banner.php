@@ -13,24 +13,15 @@
 ?>
 
 
-<?php
-$bannerCorp = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 
-if(!empty($bannerCorp[0])){
-
-
- foreach($bannerCorp[0] as $banner) { ?>
-
-   <div style="background: url('<?php echo $banner['image-banner-corp']; ?>'); background-size:cover; height:80vh;">
-
-     <h2> <?php echo $banner['title-banner-corp'] ?> </h2>
-
-
-      <h2> <?php echo $banner['description-banner-corp'] ?> </h2>
-   </div>
-
-
-   <?php
-
- }
-  }?>
+    <?php $bannerRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
+    if(sizeof($bannerRes[0]) > 0){
+    	foreach($bannerRes[0] as $banner) { ?>
+    		<div class="relative">
+    		<div class="res-banner " style="background: url('<?php echo $banner['image-banner-res']; ?>'); background-size:cover;">
+    			<h2 class="white-font text-center"> <?php echo $banner['title-banner-res'] ?> </h2>
+    		</div>
+    		<h2 class="grey-font zero-bottom home-padding absolute "> <?php echo $banner['description-banner-res'] ?></h2>
+    		</div>
+    		<?php
+    	}} ?>
