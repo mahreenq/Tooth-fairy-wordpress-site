@@ -9,15 +9,11 @@
 get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
+		<?php get_template_part( 'template-parts/page-templates/comp/banner' ); ?>
 <?php
 $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 	foreach($bannerFront[0] as $info) { ?>
-		<div class="relative">
-			<div class="home-banner " style="background: url('<?php echo $info['banner-front']; ?>'); background-size:cover;">
-			</div>
-			<h2 class="blue-font zero-bottom home-padding absolute d-white-font "> <?php echo $info['slogan-front'] ?> </h2>
-		</div>
-<div class="padding-med">
+<div class="padding-lg">
 		<h3 class="padding-bottom-med"> <?php
     	echo $info['reasons-title']; ?> </h3>
     <?php } ?>
@@ -65,11 +61,11 @@ $frontForth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 		</div>
 	<?php
 }?>
-<div class="flex">
+<div class="flex justify-center">
 <?php
 $frontFifth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 		foreach($frontFifth[0] as $dentalPartners) { ?>
-			<div class="d-width-25">
+			<div class="d-width-15">
 				<img src= "<?php echo $dentalPartners['affiliations-image-front']; ?>">
 			</div>
 <?php
