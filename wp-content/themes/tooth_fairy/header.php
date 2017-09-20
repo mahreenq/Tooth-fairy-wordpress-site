@@ -39,67 +39,83 @@
 
 			<div id="content" class="site-content">
 
-	
-	<div class="mobile-nav">
-     <div class="menu-btn" id="menu-btn">
-	<div></div>
-	<span></span>
-	<span></span>
-	<span></span>
-     </div>
- 
-     <div class="responsive-menu">
-        <ul>
-           <li>1. Hello</li>
-           <li>2. There</li>
-        </ul>
-     </div>
+	<ul>
+		<li>
+			<a href="#link">Parent 1</a>
+		</li>
+		<li class="menu-item-has-children">
+			<a href="#link">Parent 2</a>
+			<ul class="sub-menu">
+				<li>
+					<a href="#link">Child 1</a>
+				</li>
+				<li>
+					<a href="#link">Child 2</a>
+				</li>
+				<li>
+					<a href="#link">Child 3</a>
+				</li>
+			</ul>
+		</li>
+		<li>
+			<a href="#link">Parent 3</a>
+		</li>
+	</ul>
 </div>
 
-<script type="text/javascript">
-	jQuery(function($){
-    	$( '.menu-btn' ).click(function(){
-    		$('.responsive-menu').addClass('expand')
-    		$('.menu-btn').addClass('btn-none')
-    	})
-    	
-    	 $( '.close-btn' ).click(function(){
-    		$('.responsive-menu').removeClass('expand')
-    		$('.menu-btn').removeClass('btn-none')
-    	})
-  	})
- </script>
-
- <script type="text/javascript">
-	jQuery(function($){
-    	$( '.menu-btn' ).click(function(){
-    		$('.responsive-menu').addClass('expand')
-    		$('.menu-btn').addClass('btn-none')
-    	})
-    	
-    	 $( '.close-btn' ).click(function(){
-    		$('.responsive-menu').removeClass('expand')
-    		$('.menu-btn').removeClass('btn-none')
-    	})
-  	})
- </script>
+	
 
 
 
  <style type="text/css">
- 	.responsive-menu{
-max-height:0;
-background:#999999;
-width:300px;
-overflow:hidden;
-transition:all .25s;
+ 
+.menu-btn div {
+	position: absolute;
+	left: 100%;
+	top: 64%;
+	padding-right: 8px;
+	margin-top: -0.50em;
+	line-height: 1.2;
+	font-size: 18px;
+	font-weight: 200;
+	vertical-align: middle;
+	z-index: 99;
 }
-
+ 
+.menu-btn span {
+	display: block;
+	width: 19px;
+	height: 3px;
+	margin: 4px 0;
+	background: rgb(0,0,0);
+	z-index: 99;
+}
+ 
+.responsive-menu{
+	display: none;
+}
+ 
 .expand {
-
-max-height:300px; 
+	display: block !important; 
 }
-
-
-
+ 
+.open-menu-link{
+	display: none;
+	position: absolute;
+	right: 15px;
+	top:0;
+	line-height: 55px;
+	font-size: 30px;
+	cursor: pointer;
+}
+ 
+li .sub-menu{
+	display: none;
+}
+ 
+.visible {
+	display: block !important;
+}
  </style>
+
+  <script type="text/javascript" src="header.js"></script>
