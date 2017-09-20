@@ -13,8 +13,10 @@ get_header(); ?>
 
 <?php while ( have_posts() ) : the_post(); ?>
   <div class="flex direction-column d-direction-row">
+
   <div class="padding-xlg">
     <div class= "padding-bottom-lg width-100 d-width-75">
+
 <?php the_post_thumbnail(); ?>
   </div>
 <?php
