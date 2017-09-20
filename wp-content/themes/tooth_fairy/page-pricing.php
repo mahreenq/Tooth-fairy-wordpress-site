@@ -132,6 +132,9 @@ $main_pricing_4 = get_post_meta( get_the_ID(), 'payment-methods-pricing');
 $main_pricing_4 = get_post_meta( get_the_ID(), 'payments-not-pricing');
     echo "<div class='padding-bottom-med'>".$main_pricing_4[0]."</div>";
 
+$main_pricing_4 = get_post_meta( get_the_ID(), 'payments-pricing');
+    echo "<div>".$main_pricing_4[0]."</div>";
+
 $main_pricing_4 = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 if(sizeof($main_pricing_4[0]) > 0){
     foreach($main_pricing_4[0] as $main_pricing_4) {
