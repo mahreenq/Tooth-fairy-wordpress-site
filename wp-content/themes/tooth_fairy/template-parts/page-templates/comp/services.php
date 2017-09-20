@@ -11,24 +11,25 @@
 
 
 	<?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_3'.$i);
-	foreach($serviceRes[0] as $services) { ?>
+	foreach($serviceRes[0] as $key => $services) { ?>
 
 
 <div class="flex">
 <div><img src= "<?php echo $services['image-res']; ?>"></div>
 
-		<div data-collapse class="flex direction-column">
+		<div  class="flex direction-column">
 		 <div class="flex">
 
 
-			<div><h4 class="padding-left-med black-font"><?php echo $services['title-res'];?>
+			<div><h4 class="padding-left-med black-font show" data-toggle="service<?php echo $key ?>"><?php echo $services['title-res'];?>
 			<i class="fa fa-angle-down padding-left-sm d-hide" aria-hidden="true"></i>
     </h4>
       </div>
 
 		</div>
 
-		<div class="text-left padding-lg " >
+		<div class="text-left padding-lg hideservices" id="service<?php echo $key ?>" >
+
 
 			<p><?php echo $services['description-1']; ?></p>
 			<p><?php echo $services['description-2']; ?></p>
@@ -38,8 +39,7 @@
 	</div>
 </div>
 
-		<?php
-	} ?>
+	<?php } ?>
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'scheduleApp');?>
     <button class="white-font width-50 align-self-center justify-center  <?php echo $button_color ?>"> <?php echo $bookRes[0]?> </button>
@@ -47,18 +47,17 @@
     $bookCorp = get_post_meta( get_the_ID(), 'corpApp');?>
     <p> <?php echo $bookCorp[0]?></p>
 
-
-
 </div>
 
 
 
 <script type="text/javascript">
-          jQuery(document).ready(function() {
-           if (jQuery(window).width() < 480){
-               var jqc = document.createElement('script');
-            jqc.src = "https://rawgit.com/danielstocks/jQuery-Collapse/master/src/jquery.collapse.js";
-             document.getElementsByTagName('head')[0].appendChild(jqc);
-           }
-       });
+
+$(".show").on("click",function() {
+
+	var toggle = $(this).data("toggle");
+	$("#"+toggle).toggle();
+
+});
+
    </script>
