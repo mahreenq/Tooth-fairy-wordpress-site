@@ -51,12 +51,32 @@
 
      <script type="text/javascript" src="js/faq.js"></script>
 
--
-
-
-
  
      <style type="text/css">
+   h4.open:after {
+    content: "\f106";
+    font-family: FontAwesome;
+}
+
+
+@media all and (max-width: 1000px) and (min-width: 500px) {
+  h4:after{
+     content: "\f107";
+    font-family: FontAwesome;
+  }
+}
+
+
+
+.active {
+	lkjalsdkfjla {
+
+	}
+	.nav {
+
+	}
+}
+
 /*
 	body{
   font-family: 'Noto Sans', sans-serif;

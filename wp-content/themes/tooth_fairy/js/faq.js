@@ -5,4 +5,3 @@
               document.getElementsByTagName('head')[0].appendChild(jqc);
         }
       });
-
