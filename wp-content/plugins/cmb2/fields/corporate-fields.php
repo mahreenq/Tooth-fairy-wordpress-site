@@ -4,10 +4,8 @@ add_action( 'cmb2_admin_init', 'cmb2_corp_banner');
 * Define the metabox and field configurations.
 */
 function cmb2_corp_banner() {
-
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_corp1_';
-
 $cmb = new_cmb2_box( array(
    'id'           => 'banner-corp',
    'title'        => 'Corp Banner',
@@ -17,7 +15,6 @@ $cmb = new_cmb2_box( array(
    'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
    'show_names'   => true, // Show field names on the left
 ) );
-
 $group_field_id = $cmb->add_field( array(
     'id'          => 'wiki_test_repeat_group',
     'type'        => 'group',
@@ -48,7 +45,6 @@ $cmb->add_group_field( $group_field_id, array(
     'id'   => 'description-banner-corp',
     'type' => 'textarea_small',
 ) );
-
 }?>
 <?php
 add_action( 'cmb2_admin_init', 'cmb2_corporate');
@@ -56,10 +52,8 @@ add_action( 'cmb2_admin_init', 'cmb2_corporate');
 * Define the metabox and field configurations.
 */
 function cmb2_corporate() {
-
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_corporate_';
-
 $cmb = new_cmb2_box( array(
    'id'           => 'benefits-corp',
    'title'        => 'How We Benefit You',
@@ -86,21 +80,17 @@ $group_field_id = $cmb->add_field( array(
         // 'closed'     => true, // true to have the groups closed by default
     ),
 ) );
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Image',
     'id'   => 'image-corp',
     'description' => 'Upload a picture',
     'type' => 'file',
 ) );
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Benefit 1 Blue',
     'id'   => 'description-1',
     'type' => 'text',
 ) );
-
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Benefit 1',
     'id'   => 'description-2',
@@ -111,14 +101,11 @@ $cmb->add_group_field( $group_field_id, array(
     'id'   => 'description-3',
     'type' => 'text',
 ) );
-
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Benefit 2 ',
     'id'   => 'description-4',
     'type' => 'text',
 ) );
-
 }?>
 <?php
 add_action( 'cmb2_admin_init', 'cmb2_corporate2');
@@ -126,10 +113,8 @@ add_action( 'cmb2_admin_init', 'cmb2_corporate2');
 * Define the metabox and field configurations.
 */
 function cmb2_corporate2() {
-
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_corporate2_';
-
 $cmb = new_cmb2_box( array(
    'id'           => 'services-corp',
    'title'        => 'The Services We Offer',
@@ -156,21 +141,17 @@ $group_field_id = $cmb->add_field( array(
         // 'closed'     => true, // true to have the groups closed by default
     ),
 ) );
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Image',
     'id'   => 'image-corp',
     'description' => 'Upload a picture',
     'type' => 'file',
 ) );
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Title',
     'id'   => 'description-1',
     'type' => 'text',
 ) );
-
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Description 1',
     'id'   => 'description-2',
@@ -181,8 +162,6 @@ $cmb->add_group_field( $group_field_id, array(
     'id'   => 'description-3',
     'type' => 'text',
 ) );
-
-
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Description 3',
     'id'   => 'description-4',
@@ -195,10 +174,8 @@ add_action( 'cmb2_admin_init', 'cmb2_corp_4');
 * Define the metabox and field configurations.
 */
 function cmb2_corp_4() {
-
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_corp4_';
-
 $cmb = new_cmb2_box( array(
    'id'           => 'ScheduleApp-corp',
    'title'        => 'Schedule an Appointment',
@@ -208,7 +185,6 @@ $cmb = new_cmb2_box( array(
    'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
    'show_names'   => true, // Show field names on the left
 ) );
-
 $group_field_id = $cmb->add_field( array(
     'id'          => 'wiki_test_repeat_group_4',
     'type'        => 'group',
@@ -226,5 +202,4 @@ $cmb->add_field( array(
 	'id'   => 'scheduleAppCorp',
 	'type' => 'text',
 ) );
-
 } ?>
