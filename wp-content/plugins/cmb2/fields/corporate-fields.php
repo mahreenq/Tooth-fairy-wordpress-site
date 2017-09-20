@@ -30,19 +30,19 @@ $group_field_id = $cmb->add_field( array(
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Banner Image',
     'description' => 'Upload an Image',
-    'id'   => 'image-banner-corp',
+    'id'   => 'banner-img',
     'type' => 'file',
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Banner Title',
-    'id'   => 'title-banner-corp',
+    'id'   => 'banner-title',
     'description' => 'Title for Banner',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Banner Description',
     'description' => 'Write a short description to display on banner',
-    'id'   => 'description-banner-corp',
+    'id'   => 'banner-subtitle',
     'type' => 'textarea_small',
 ) );
 }?>
