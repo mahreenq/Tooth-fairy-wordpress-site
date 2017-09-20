@@ -18,10 +18,10 @@
     if(sizeof($bannerRes[0]) > 0){
     	foreach($bannerRes[0] as $banner) { ?>
     		<div class="relative">
-    		<div class="res-banner " style="background: url('<?php echo $banner['image-banner-res']; ?>'); background-size:cover;">
-    			<h2 class="white-font text-center"> <?php echo $banner['title-banner-res'] ?> </h2>
+    		<div class="res-banner " style="background: url('<?php echo $banner['banner-img']; ?>'); background-size:cover;">
+    			<h2 class="white-font text-center"> <?php echo $banner['banner-title'] ?> </h2>
     		</div>
-    		<h2 class="grey-font zero-bottom home-padding absolute "> <?php echo $banner['description-banner-res'] ?></h2>
+    		<h2 class="grey-font zero-bottom home-padding absolute "> <?php echo $banner['banner-subtitle'] ?></h2>
     		</div>
     		<?php
     	}} ?>
