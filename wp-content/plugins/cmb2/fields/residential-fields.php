@@ -139,7 +139,7 @@ function cmb2_residential2() {
     $prefix = '_residential2_';
 
 $cmb = new_cmb2_box( array(
-   'id'           => 'services-res',
+   'id'           => 'services',
    'title'        => 'The Services We Offer',
    'object_types' => array( 'page' ), // post type
    'show_on'      => array( 'key' => 'page-template', 'value' => 'page-residential.php' ),
@@ -149,7 +149,7 @@ $cmb = new_cmb2_box( array(
 ) );
 $cmb->add_field( array(
 	'name' => 'services header',
-	'id'   => 'services-residential_3',
+	'id'   => 'services_title',
 	'type' => 'text',
 ) );
 $group_field_id = $cmb->add_field( array(
@@ -166,12 +166,12 @@ $group_field_id = $cmb->add_field( array(
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Image',
-    'id'   => 'image-res',
+    'id'   => 'services_img',
     'type' => 'file',
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Title',
-    'id'   => 'title-res',
+    'id'   => 'services_subtitle',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
@@ -225,12 +225,12 @@ $group_field_id = $cmb->add_field( array(
 ) );
 $cmb->add_field( array(
 	'name' => 'Schedule Appointment',
-	'id'   => 'scheduleApp',
+	'id'   => 'schedule_app',
 	'type' => 'text',
 ) );
 $cmb->add_field( array(
 	'name' => 'link to Corporate page',
-	'id'   => 'corpApp',
+	'id'   => 'corp_app',
 	'type' => 'text',
 ) );
 }?>

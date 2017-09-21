@@ -819,9 +819,6 @@ a:visited {
   display: none; }
 
 /* FAQ */
-h4.open:after {
-  content: "\f106"; }
-
 /*blog */
 .height-50 {
   height: 50vh; }
@@ -852,12 +849,12 @@ h4.open:after {
 #text-2 {
   width: 75%; }
 
-#text-4 {
+#text-3 {
   width: 25%;
   -ms-flex-pack: end;
       justify-content: flex-end; }
 
-#text-6 {
+#text-4 {
   width: 100%;
   text-align: center; }
 
