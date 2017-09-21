@@ -1,7 +1,7 @@
 var dropdown = document.getElementById('myDropdown');
 var x = document.getElementById('primary-menu');
 x.style.display = 'none';
-dropdown.addEventListener("click", function (e){
+dropdown.addEventListener("click", function (){
   console.log(x);
   console.log(dropdown);
     if (x.style.display === 'none') {
@@ -12,6 +12,15 @@ dropdown.addEventListener("click", function (e){
 });
 
 var sublist = document.getElementsByClassName("menu-item-has-children");
-var y = document.getElementsByClassName("sub-menu");
+// var y = document.getElementsByClassName("sub-menu");
 
-// sublist.addEventListener("click", function())
+for (var i = 0; i<sublist.length; i++)
+sublist[i].addEventListener("click", function(){
+var subMenu = this.querySelector('.sub-menu');
+    if (subMenu.style.display === 'none') {
+        subMenu.style.display = 'flex';
+    } else {
+        subMenu.style.display = 'none';
+    }
+
+});
