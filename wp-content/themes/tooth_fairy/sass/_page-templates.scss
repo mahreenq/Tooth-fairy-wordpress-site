@@ -60,10 +60,10 @@ display:none;
   display:none;
 }
 /* FAQ */
-h4.open:after {
-   content: "\f106";
- }
- 
+// h4.open:after {
+//    content: "\f106";
+//  }
+
 /*blog */
 .height-50 {
   height:50vh;
@@ -99,11 +99,11 @@ border-bottom-right-radius :20px;
 #text-2 {
   width: 75%;
 }
-#text-4 {
+#text-3 {
   width: 25%;
   justify-content: flex-end;
 }
-#text-6{
+#text-4{
   width:100%;
   text-align: center;
 }
