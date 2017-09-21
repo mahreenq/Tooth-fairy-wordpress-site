@@ -21,7 +21,7 @@ $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 		$whyGTA = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
 			foreach($whyGTA[0] as $whyTF) { ?>
 					<div class="flex">
-						<div class="width-10">
+						<div class="icon-home">
 							<img src= "<?php echo $whyTF['icon-front']; ?>">
 						</div>
 					<div class="direction-column padding-left-med">
@@ -61,7 +61,7 @@ $frontForth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_4');
 		</div>
 	<?php
 }?>
-<div class="flex justify-center">
+<div class="flex justify-even">
 <?php
 $frontFifth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 		foreach($frontFifth[0] as $dentalPartners) { ?>
