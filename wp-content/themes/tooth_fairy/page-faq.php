@@ -14,7 +14,12 @@
 	<div id="primary">
 	<div id="content padding-lg" role="main" data>
 
-	<?php while ( have_posts() ) : the_post();
+	<?php while ( have_posts() ) : the_post(); ?>
+
+<h1 class="text-center"> <?php the_title();  ?> </h1>
+
+		<?php
+
 
 	// Array to get the FAQ Fields
 
@@ -78,24 +83,4 @@ $(".show").on("click",function() {
     <a href="#"><li>Contact</li></a>
     <a href="#"><li>Blog</li></a>
   </ul>
-</div> 
-
-<style type="text/css">
-	.collapse{
-  cursor: pointer;
-  display: block;
-  background: #cdf;
-}
-.collapse + input{
-  display: none; /* hide the checkboxes */
-}
-.collapse + input + div{
-  display:none;
-}
-.collapse + input:checked + div{
-  display:block;
-}
-
-	
-</style>
-
+</div>
