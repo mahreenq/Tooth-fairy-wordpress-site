@@ -228,9 +228,4 @@ $cmb->add_field( array(
 	'id'   => 'schedule_app',
 	'type' => 'text',
 ) );
-$cmb->add_field( array(
-	'name' => 'link to Corporate page',
-	'id'   => 'corp_app',
-	'type' => 'text',
-) );
 }?>

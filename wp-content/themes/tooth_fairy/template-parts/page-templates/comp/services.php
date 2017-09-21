@@ -37,10 +37,6 @@
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'services_app');?>
     <button class="white-font  align-self-center justify-center  <?php echo $button_color ?>"> <?php echo $bookRes[0]?> </button>
-<?php
-    $bookCorp = get_post_meta( get_the_ID(), 'corp_app');?>
-    <p> <?php echo $bookCorp[0]?></p>
-
 </div>
 
 
