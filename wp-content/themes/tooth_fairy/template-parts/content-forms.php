@@ -17,11 +17,11 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'booking-confirma
     <?php
     if(sizeof($bookingform[0] >0)){
      ?>
-     <div class="text-align">
-      <h1 class="text-align">
+     <div class="text-center">
+      <h1 class="text-center">
         <?php echo $bookingformheading['heading-form-1']; ?>
       </h1>
-      <h2 class="">
+      <h2 class=" text-center">
         <?php echo $bookingformheading['subheading-form-1']; ?>
       </h2>
       <h4 class="padding-lg">

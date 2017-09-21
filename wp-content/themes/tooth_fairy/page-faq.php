@@ -33,15 +33,13 @@
  <?php  	foreach($faqs[0] as $faq => $question) { ?>
 
     <!-- Wraps members of array in elements   -->
-    	 <div >
+    	 <div class="padding-lg" >
 
 	 <h4 class="padding-sm show"  data-toggle="answer<?php echo $faq ?>" >
-		 <?php
-
-		 			echo $question['question'];
-		 ?>
-	 </h4>
-     <p class="hideservices" id="answer<?php echo $faq ?>">
+		 <?php echo $question['question']; ?>
+	 <i class="fa fa-angle-down d-hide" aria-hidden="true"></i>
+  </h4>
+     <p class="hideservices padding-left-lg " id="answer<?php echo $faq ?>">
 			 <?php  echo $question['answer'];?>
 		 </p>
 
@@ -61,7 +59,7 @@
 	<?php get_footer(); ?>
 
 <script type="text/javascript">
-console.log ("hey")
+
 
 $(".show").on("click",function() {
 
@@ -71,16 +69,3 @@ $(".show").on("click",function() {
 });
 
    </script>
-
-            <button class="hamburger">&#9776;</button>
-  <button class="cross">&#735;</button>
-</header>
-
-<div class="menu1">
-  <ul>
-    <a href="#"><li>Our Services</li></a>
-    <a href="#"><li>About</li></a>
-    <a href="#"><li>Contact</li></a>
-    <a href="#"><li>Blog</li></a>
-  </ul>
-</div>
