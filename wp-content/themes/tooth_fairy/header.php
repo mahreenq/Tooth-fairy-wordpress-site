@@ -17,7 +17,26 @@
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 		
 
+	<?php wp_head(); ?>
+	</head>
 
+	
+	<body <?php body_class(); ?>>
+		<div id="page" class="hfeed site">
+			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
+
+			<header id="masthead" class="site-header" role="banner">
+				<div class="site-branding">
+					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+				</div><!-- .site-branding -->
+
+				<nav id="site-navigation" class="main-navigation" role="navigation">
+					
+				</nav><!-- #site-navigation -->
+			</header><!-- #masthead -->
+
+			<div id="content" class="site-content">
               
 
               <div class="nav">
@@ -34,72 +53,3 @@
 
 
 
-			<style type="text/css">
-	html, body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-}
-html {
-    font-family: "helvetica neue", sans-serif;
-}
-
-.nav {
-    border-bottom: 1px solid #EAEAEB;
-    text-align: right;
-    height: 70px;
-    line-height: 70px;
-}
-.menu {
-    margin: 0 30px 0 0;
-}
-.menu a {
-    clear: right;
-    text-decoration: none;
-    color: gray;
-    margin: 0 10px;
-    line-height: 70px;
-}
-
-span {
-    color: #54D17A;
-}
-
-label {
-    margin: 0 40px 0 0;
-    font-size: 26px;
-    line-height: 70px;
-    display: none;
-    width: 26px;
-    float: right;
-}
-#toggle {
-    display: none;
-}
-
-
-@media only screen and (max-width: 500px) {
-    label {
-        display: block;
-        cursor: pointer;
-    }
-    .menu {
-        text-align: center;
-        width: 100%;
-        display: none;
-    }
-    .menu a {
-        display: block;
-        border-bottom: 1px solid #EAEAEB;
-        margin: 0;
-     
-    }
-    #toggle:checked + .menu {
-        display: block;
-    }
-    
-    
-}
-
-
-			</style>
