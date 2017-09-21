@@ -101,7 +101,7 @@ function faq() {
 }
 add_action( 'wp_enqueue_scripts', 'faq' );
 
-                       // Header 
+                       // Header
 function navbar() {
   wp_enqueue_script( 'navbar', get_template_directory_uri() . '/build/js/navbar.min.js', array(), '2', true );
 }
@@ -120,12 +120,13 @@ require get_template_directory() . '/inc/extras.php';
 
 function wmpudev_enqueue_icon_stylesheet() {
     wp_register_style( 'fontawesome', 'http:////maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css' );
+		wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400, 900', false );
     wp_enqueue_style( 'fontawesome');
 }
 add_action( 'wp_enqueue_scripts', 'wmpudev_enqueue_icon_stylesheet' );
 
 function custom_add_google_fonts() {
-wp_enqueue_style( 'custom-google-fonts', 'https://fonts.googleapis.com/css?family=Roboto:300,400, 900', false );
+
 }
 add_action( 'wp_enqueue_scripts', 'custom_add_google_fonts' );
 
