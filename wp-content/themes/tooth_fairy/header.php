@@ -54,8 +54,6 @@
 <style type="text/css">
 @media screen and (max-width: 600px) {	
 	#primary-menu{
-		display: none;
-		display: flex;
 		flex-direction: column;
 	}
 }
