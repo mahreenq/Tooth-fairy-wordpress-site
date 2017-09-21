@@ -15,42 +15,91 @@
 		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
 		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
 		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
-	<?php wp_head(); ?>
-	</head>
-
-	
-	<body <?php body_class(); ?>>
-		<div id="page" class="hfeed site">
-			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
-
-			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
-				</div><!-- .site-branding -->
-
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					
-				</nav><!-- #site-navigation -->
-			</header><!-- #masthead -->
-
-			<div id="content" class="site-content">
-
-	
-  <button class="hamburger">&#9776;</button>
-  <button class="cross">&#735;</button>
-</nav>
-</header>
-
-<div class="menu">
-  <ul>
-    <a href="#"><li>Our Services</li></a>
-    <a href="#"><li>About</li></a>
-    <a href="#"><li>Contact</li></a>
-    <a href="#"><li>Blog</li></a>
-  </ul>
-</div> 
+		
 
 
+              
+
+              <div class="nav">
+        <label for="toggle">&#9776;</label>
+        <input type="checkbox" id="toggle"/>
+        <div class="menu">
+            <a href="#">Business</a>
+            <a href="#">Services</a>
+            <a href="#">Learn More</a>
+            <a href="#"><span>Free Trial</span></a>
+        </div>
+
+
+
+
+
+			<style type="text/css">
+	html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+html {
+    font-family: "helvetica neue", sans-serif;
+}
+
+.nav {
+    border-bottom: 1px solid #EAEAEB;
+    text-align: right;
+    height: 70px;
+    line-height: 70px;
+}
+.menu {
+    margin: 0 30px 0 0;
+}
+.menu a {
+    clear: right;
+    text-decoration: none;
+    color: gray;
+    margin: 0 10px;
+    line-height: 70px;
+}
+
+span {
+    color: #54D17A;
+}
+
+label {
+    margin: 0 40px 0 0;
+    font-size: 26px;
+    line-height: 70px;
+    display: none;
+    width: 26px;
+    float: right;
+}
+#toggle {
+    display: none;
+}
+
+
+@media only screen and (max-width: 500px) {
+    label {
+        display: block;
+        cursor: pointer;
+    }
+    .menu {
+        text-align: center;
+        width: 100%;
+        display: none;
+    }
+    .menu a {
+        display: block;
+        border-bottom: 1px solid #EAEAEB;
+        margin: 0;
+     
+    }
+    #toggle:checked + .menu {
+        display: block;
+    }
+    
+    
+}
+
+
+			</style>
