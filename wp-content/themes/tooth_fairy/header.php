@@ -56,6 +56,9 @@
 	#primary-menu{
 		flex-direction: column;
 	}
+	.sub-menu{
+		flex-direction: column;
+	}
 }
 
 
