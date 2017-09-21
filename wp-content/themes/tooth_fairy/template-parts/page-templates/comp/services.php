@@ -43,11 +43,13 @@
 
 <script type="text/javascript">
 
-$(".show").on("click",function() {
+jQuery(document).ready(function($){
 
+$(".show").on("click",function() {
 	var toggle = $(this).data("toggle");
 	$("#"+toggle).toggle();
 
+});
 });
 
    </script>
