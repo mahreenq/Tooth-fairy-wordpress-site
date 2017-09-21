@@ -39,7 +39,7 @@
 		 <?php echo $question['question']; ?>
 	 <i class="fa fa-angle-down d-hide" aria-hidden="true"></i>
   </h4>
-     <p class="hideservices padding-left-lg " id="answer<?php echo $faq ?>">
+     <p class="hideservices padding-left-lg hideservices " id="answer<?php echo $faq ?>">
 			 <?php  echo $question['answer'];?>
 		 </p>
 
@@ -61,11 +61,13 @@
 <script type="text/javascript">
 
 
-$(".show").on("click",function() {
+jQuery(document).ready(function($){
 
+$(".show").on("click",function() {
 	var toggle = $(this).data("toggle");
 	$("#"+toggle).toggle();
 
+});
 });
 
    </script>

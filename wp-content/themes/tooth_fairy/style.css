@@ -1041,6 +1041,7 @@ button {
   -ms-flex-preferred-size: 50%;
       flex-basis: 50%; }
 
+/* COLOURS */
 .med-blue-bkg {
   background-color: #68B7E7; }
 
@@ -1205,13 +1206,6 @@ button {
   .d-text-center {
     text-align: center; }
   .hideservices {
-<<<<<<< HEAD
-<<<<<<< HEAD
-    display: block; } }
-=======
-
-=======
->>>>>>> 287e0f08cb52d033b9f604944eba36bc549c32f7
     display: block; }
   .icon-home {
     width: auto; }
@@ -1234,8 +1228,3 @@ button {
     font-size: 1rem; }
   p {
     font-size: 1rem; } }
-<<<<<<< HEAD
-
->>>>>>> c6eee37876c68d848254ae5c5f0b2a7868ed11e5
-=======
->>>>>>> 287e0f08cb52d033b9f604944eba36bc549c32f7
