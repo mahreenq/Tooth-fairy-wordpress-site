@@ -12,67 +12,40 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-		<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-		<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-		
+		<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+		<script type="text/javascript" src="http://localhost:8888/project-wordpress/wp-content/themes/redstarter-master/js/search.js"></script>
 
 	<?php wp_head(); ?>
 	</head>
 
-	
 	<body <?php body_class(); ?>>
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<header id="masthead" class="site-header" role="banner">
-				<div class="site-branding">
-					<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-					<p class="site-description"><?php bloginfo( 'description' ); ?></p>
+			<?php $img = get_field("banner_image");?>
+
+	<?php echo '<header id="masthead" class="'.$site_header.' flex align-items-center justify-around flex-wrap" role="banner">'; ?>
+
+		<?php echo '<a href="http://localhost:8888/tooth_fairy/"><img src="http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/logo.png"></a>'; ?>
+			<div class="site-branding">
+				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation" role="navigation">
-					
-				</nav><!-- #site-navigation -->
+
+					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
+
+	
+				<button id="myDropdown" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+
+
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-   
 
-<div class="dropdown">
-<button onclick="myFunction()" class="dropbtn">☰</button>
-  <div id="myDropdown" class="dropdown-content">
-    <a href="#home">Our Services</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-    <a href="#blog">Blog</a>
-  </div>
-</div>
-
-<script>
-/
-/* When the user clicks on the button, 
-toggle between hiding and showing the dropdown content */
-
-
-function myFunction() {
-    document.getElementById("myDropdown").classList.toggle("show");
+<style type="text/css">
+@media screen and (max-width: 600px) {	
+	#primary-menu{
+		display: none;
+	}
 }
-
-// Close the dropdown if the user clicks outside of it
-window.onclick = function(event) {
-  if (!event.target.matches('.dropbtn')) {
-
-    var dropdowns = document.getElementsByClassName("dropdown-content");
-    var i;
-    for (i = 0; i < dropdowns.length; i++) {
-      var openDropdown = dropdowns[i];
-      if (openDropdown.classList.contains('show')) {
-        openDropdown.classList.remove('show');
-      }
-    }
-  }
-}
-</script>
-
-</body>
+</style>
