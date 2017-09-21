@@ -21,17 +21,14 @@ foreach ($auto[0] as $a) {
     var providers = <?php echo "[".$providers."]"; ?>;
     $( "#tags" ).autocomplete({
       source: providers,
+      
     });
 
     $(document).ready(function () {
+      console.log(1);
         $(".ui-autocomplete").on("click",function (e){
-            var inputVal = $("#tags").val();
-            if (inputVal == 0){
-              $("#accept").html("No results found!");
-            }
-            else{
-              $("#accept").html("We accept plans from" + " " + inputVal + ".");
-            }
+            var inputVal = $("#tags").val()
+            $("#accept").html("We accept plans from" + " " + inputVal + ".");
         })
     })
 
