@@ -1,4 +1,44 @@
 @media only screen and (min-width: 600px) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+	.d-width-auto{
+		width:auto;
+	}
+	.menu-item{
+	padding: 1rem;
+	}
+	#primary-menu{
+		display: flex!important;
+		flex-direction: row;
+		justify-content: center;
+	}
+	.menu-item-178{
+		background-color:$yellow;
+		a {
+			color: white;
+		}
+		a:visited{
+			color:white;
+		}	
+	}
+	.order-2{
+		order:2;
+	}
+	.order-3{
+		order:3;
+	}
+	.menu-menu-1-container{
+	background-color: $white;
+	justify-content:space-between;
+	display:flex;
+	}
+	.myDropdown {
+		display:none;
+	}
 	.absolute{
 	  position: absolute;
 	}

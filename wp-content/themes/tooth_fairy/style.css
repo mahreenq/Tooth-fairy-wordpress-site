@@ -433,9 +433,6 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Contact forms */
-input {
-  margin: 1rem; }
-
 .wpcf7-radio {
   display: -ms-flexbox;
   display: flex;
@@ -539,9 +536,7 @@ a {
   width: 100%; }
   .main-navigation ul {
     display: none;
-    list-style: none;
-    margin: 0;
-    padding-left: 0; }
+    list-style: none; }
     .main-navigation ul ul {
       float: left;
       top: 1.5rem;
@@ -570,12 +565,6 @@ a {
 .main-navigation.toggled ul {
   display: block; }
 
-@media screen and (min-width: 768px) {
-  .menu-toggle {
-    display: none; }
-  .main-navigation ul {
-    display: block; } }
-
 .site-main .comment-navigation, .site-main
 .posts-navigation, .site-main
 .post-navigation {
@@ -603,6 +592,38 @@ a {
   text-align: right;
   width: 50%;
   padding: 2em; }
+
+.white-button {
+  background-color: white; }
+
+.sub-menu {
+  padding-left: .5rem; }
+
+.menu-item {
+  padding: .5rem; }
+
+li a {
+  color: #32698A; }
+
+li a:visited {
+  color: #32698A; }
+
+.menu-menu-1-container {
+  background-color: #DBF4F2; }
+
+#primary-menu {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.sub-menu {
+  -ms-flex-direction: column;
+      flex-direction: column; }
+
+.myDropdown {
+  display: block; }
+
+.blue-border-btm {
+  border-bottom: 0.1em solid #68B7E7; }
 
 /*--------------------------------------------------------------
 # Accessibility
@@ -1163,6 +1184,41 @@ button {
   margin-bottom: 2em; }
 
 @media only screen and (min-width: 600px) {
+  .menu-toggle {
+    display: none; }
+  .main-navigation ul {
+    display: block; }
+  .d-width-auto {
+    width: auto; }
+  .menu-item {
+    padding: 1rem; }
+  #primary-menu {
+    display: -ms-flexbox !important;
+    display: flex !important;
+    -ms-flex-direction: row;
+        flex-direction: row;
+    -ms-flex-pack: center;
+        justify-content: center; }
+  .menu-item-178 {
+    background-color: #FFD466; }
+    .menu-item-178 a {
+      color: white; }
+    .menu-item-178 a:visited {
+      color: white; }
+  .order-2 {
+    -ms-flex-order: 2;
+        order: 2; }
+  .order-3 {
+    -ms-flex-order: 3;
+        order: 3; }
+  .menu-menu-1-container {
+    background-color: #fff;
+    -ms-flex-pack: justify;
+        justify-content: space-between;
+    display: -ms-flexbox;
+    display: flex; }
+  .myDropdown {
+    display: none; }
   .absolute {
     position: absolute; }
   .home-banner {

@@ -26,40 +26,23 @@
 
 			<div class="site-branding">
 				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-				</div><!-- .site-branding -->
+			</div><!-- .site-branding -->
 
-				<?php echo '<nav id="hide-menu" class="main-navigation" role="navigation">';?>
+				<nav id="hide-menu" class="main-navigation flex justify-between flex-wrap blue-border-btm" role="navigation">
 
-					<div class="flex justify-between">
-						<div>
+						<div class="padding-left-sm">
 							<a href="http://localhost:8888/tooth_fairy/"><img src="http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/logo.png"></a>
 						</div>
-						<div>
-							<button id="myDropdown" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><img src="http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/hamburger-menu.png"</button>
+						<div class="order-3 flex justify-end width-75">
+							<button id="myDropdown" class="menu-toggle white-button" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><img src="http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/hamburger-menu.png"></button>
 						</div>
-
-					</div>
-
+					
+						<div class="order-2 width-100 d-width-auto ">
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
-
-
+				</div>
 				</nav><!-- #site-navigation -->
 
 
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-
-
-<style type="text/css">
-@media screen and (max-width: 600px) {	
-	#primary-menu{
-		flex-direction: column;
-	}
-	.sub-menu{
-		flex-direction: column;
-	}
-}
-
-
-</style>
