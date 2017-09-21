@@ -42,7 +42,7 @@ $bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
 				<div class="flex direction-column width-50 align-items-center">
 					<h4><?php echo $services['customer-front'];?></h4>
 					<img class="width-50" src= "<?php echo $services['customer-type-image-front']; ?>">
-					<button class="width-50 white-font <?php echo $icon_color?>"><?php echo $services['learn-button-front']; ?></button>
+					<button class=" white-font <?php echo $icon_color?>"><?php echo $services['learn-button-front']; ?></button>
 				</div>
 				<?php
 			}?>

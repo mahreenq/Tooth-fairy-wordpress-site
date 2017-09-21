@@ -63,6 +63,10 @@
   .hideservices{
   display:block;
   }
+	h4:after{
+    content: "\f107";
+   font-family: FontAwesome;
+ }
 }
 @media only screen and (min-width: 1000px) {
 
