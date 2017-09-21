@@ -9,7 +9,7 @@
 
 	get_header(); ?>
 
-     <body = padding-lg>
+     <body = padding-lg> // WWWWWWWWHHHHHHHTYTYTYTTTERTGSERGAERGAQRW#%GWRGYht'loeht
 
 	<div id="primary">
 	<div id="content padding-lg" role="main" data>
@@ -49,7 +49,7 @@
             echo "no content";  }?>
   </div>
   </div>
-  </body>
+</body> /////// why do you hate me
 
 	<?php endwhile; // end of the loop. ?>
 
