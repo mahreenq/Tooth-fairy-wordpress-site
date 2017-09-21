@@ -10,7 +10,7 @@ get_header(); ?>
 
 
 <?php
-if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'book-step-4', 'booking-confirmation'))){ ?>
+if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'booking-confirmation'))){ ?>
 
   <?php  $bookingform = get_post_meta( get_the_ID(), 'wiki_test_repeat_group'); ?>
   <?php foreach ($bookingform[0] as $bookingformheading) {  ?>
@@ -32,15 +32,12 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'book-step-4', 'b
         <?php echo "no content"; }} ?>
 
 
+
+
 <?php while ( have_posts() ) : the_post(); ?>
    <div class="flex justify-center ">
     <?php  the_content(); ?>
-    <div class="flex">
-        <div class="width-25">la</div>
-        <div class="width-25"> la</div>
-        <div class="width-25">la</div>
-        <div class="width-25">la </div>
-  </div>
+
 
   </div>
 			<?php endwhile; // End of the loop. ?>
@@ -51,26 +48,51 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'book-step-4', 'b
 }
 ?>
 
-<div class="flex justify-center padding-top-xl padding-bottom-xlg" >
+<!-- PROGRESS BAR -->
+
+<div class=" flex justify-center padding-top-xl padding-bottom-xlg" >
  <?php if (is_page('book-step-1')){ ?>
-  <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_1.png">
+
+  <div class="flex justify-center width-75 ">
+      <div class="width-25 grey-bkg border-top-left-radius border-bottom-left-radius"> </div>
+      <div class="width-25 drk-grey-bkg"> </div>
+      <div class="width-25 drk-grey-bkg border-top-right-radius border-bottom-right-radius"> </div>
+</div>
 
 
   <?php } ?>
 
   <?php if (is_page('book-step-2')){ ?>
-   <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_2.png">
-   <?php } ?>
-   <?php if (is_page('book-step-3')){ ?>
-    <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_3.png">
+  <div class="flex justify-center width-75 ">
+       <div class="width-25 yellow-bkg border-top-left-radius border-bottom-left-radius height-25px grey-border"> </div>
+       <div class="width-25 grey-bkg height-25px grey-border"> </div>
+       <div class="width-25 drk-grey-bkg border-top-right-radius border-bottom-right-radius height-25px grey-border"> </div>
+ </div>
+
+
     <?php } ?>
-    <?php if (is_page('book-step-4')){ ?>
-     <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_4.png">
+    <?php if (is_page('book-step-3')){ ?>
+
+        <div class="flex justify-center width-75 ">
+         <div class="width-25 yellow-bkg border-top-left-radius border-bottom-left-radius height-25px grey-border"> </div>
+         <div class="width-25 yellow-bkg height-25px grey-border"> </div>
+
+         <div class="width-25 grey-bkg border-top-right-radius border-bottom-right-radius height-25px grey-border"> </div>
+   </div>
+
      <?php } ?>
      <?php if (is_page('booking-confirmation')){ ?>
-      <img class= "width-75" src="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/themes/tooth_fairy/assets/booking_step_5.png">
+  <div class="flex justify-center width-75 ">
+
+          <div class="width-25 yellow-bkg border-top-left-radius border-bottom-left-radius height-25px grey-border"> </div>
+          <div class="width-25 yellow-bkg height-25px grey-border"></div>
+          <div class="width-25 yellow-bkg border-top-right-radius border-bottom-right-radius height-25px grey-border"> </div>
+</div>
+
       <?php } ?>
 
     </div>
+
+
 
 <?php get_footer() ?>
