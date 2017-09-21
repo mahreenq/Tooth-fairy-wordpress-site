@@ -433,9 +433,6 @@ table {
 # Forms
 --------------------------------------------------------------*/
 /* Contact forms */
-input {
-  margin: 1rem; }
-
 .wpcf7-radio {
   display: -ms-flexbox;
   display: flex;
