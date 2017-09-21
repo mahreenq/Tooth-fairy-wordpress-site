@@ -22,30 +22,43 @@
 		<div id="page" class="hfeed site">
 			<a class="skip-link screen-reader-text" href="#content"><?php esc_html( 'Skip to content' ); ?></a>
 
-			<?php $img = get_field("banner_image");?>
-
 	<?php echo '<header id="masthead" class="'.$site_header.' flex align-items-center justify-around flex-wrap" role="banner">'; ?>
 
-		<?php echo '<a href="http://localhost:8888/tooth_fairy/"><img src="http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/logo.png"></a>'; ?>
 			<div class="site-branding">
 				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 				</div><!-- .site-branding -->
 
+				<?php echo '<nav id="hide-menu" class="main-navigation" role="navigation">';?>
+
+					<div class="flex justify-between">
+						<div>
+							<a href="http://localhost:8888/tooth_fairy/"><img src="http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/logo.png"></a>
+						</div>
+						<div>
+							<button id="myDropdown" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?><img src="http://localhost:8888/tooth_fairy/wp-content/themes/tooth_fairy/assets/hamburger-menu.png"</button>
+						</div>
+
+					</div>
 
 					<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_id' => 'primary-menu' ) ); ?>
 
-	
-				<button id="myDropdown" class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html( 'Primary Menu' ); ?></button>
+
+				</nav><!-- #site-navigation -->
 
 
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
 
+
 <style type="text/css">
 @media screen and (max-width: 600px) {	
 	#primary-menu{
 		display: none;
+		display: flex;
+		flex-direction: column;
 	}
 }
+
+
 </style>
