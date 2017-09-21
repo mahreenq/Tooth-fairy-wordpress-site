@@ -12,7 +12,11 @@ dropdown.addEventListener("click", function (){
 });
 
 var sublist = document.getElementsByClassName("menu-item-has-children");
-// var y = document.getElementsByClassName("sub-menu");
+var submenulist = document.getElementsByClassName("sub-menu");
+
+for (var y = 0; y<submenulist.length; y++){
+  submenulist[y].style.display = 'none';
+}
 
 for (var i = 0; i<sublist.length; i++)
 sublist[i].addEventListener("click", function(){
