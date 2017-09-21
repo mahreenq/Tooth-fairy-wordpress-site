@@ -40,7 +40,7 @@
 	<?php } ?>
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'scheduleApp');?>
-    <button class="white-font width-50 align-self-center justify-center  <?php echo $button_color ?>"> <?php echo $bookRes[0]?> </button>
+    <button class="white-font  align-self-center justify-center  <?php echo $button_color ?>"> <?php echo $bookRes[0]?> </button>
 <?php
     $bookCorp = get_post_meta( get_the_ID(), 'corpApp');?>
     <p> <?php echo $bookCorp[0]?></p>
