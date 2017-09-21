@@ -10,13 +10,9 @@ get_header(); ?>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 		<?php get_template_part( 'template-parts/page-templates/comp/banner' ); ?>
-<?php
-$bannerFront = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
-	foreach($bannerFront[0] as $info) { ?>
 <div class="padding-lg">
-		<h3 class="padding-bottom-med"> <?php
-    	echo $info['reasons-title']; ?> </h3>
-    <?php } ?>
+<?php $bannerFront = get_post_meta( get_the_ID(), 'reasons-title');?>
+		<h3 class="padding-bottom-med"> <?php print_r($bannerFront[0]); ?> </h3>
 		<?php
 		$whyGTA = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
 			foreach($whyGTA[0] as $whyTF) { ?>

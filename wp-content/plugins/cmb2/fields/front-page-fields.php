@@ -23,6 +23,7 @@ $group_field_id = $cmb->add_field( array(
 	'type'        => 'group',
 	'repeatable'  => false, // use false if you want non-repeatable group
 	'options'     => array(
+		'group_title'   => __( 'Banner Img', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
 		'add_button'    => __( 'Add Another Entry', 'cmb2' ),
 		'remove_button' => __( 'Remove Entry', 'cmb2' ),
 		'sortable'      => true, // beta
@@ -32,21 +33,18 @@ $group_field_id = $cmb->add_field( array(
 
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Banner Image',
+	'description' => 'Upload an Image',
 	'id'   => 'banner-img',
 	'type' => 'file',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Slogan',
+	'name' => 'Banner Title',
+	'description' => 'Title for Banner',
 	'id'   => 'banner-subtitle',
 	'type' => 'text',
 ) );
 
-$cmb->add_group_field( $group_field_id, array(
-	'name' => 'reasons-title',
-	'id'   => 'reasons-title',
-	'type' => 'text',
-) );
 
 }
 //====================================================================
@@ -70,7 +68,12 @@ $cmb = new_cmb2_box( array(
     'priority'     => 'default',  //  'high', 'core', 'default' or 'low'
     'show_names'   => true, // Show field names on the left
 ) );
-
+$cmb->add_field( array(
+	'name' => 'Heading Title ',
+	'description' => 'Title Why choose GTA tooth fairy',
+	'description' => 'Write Heading title',
+	'type' => 'text',
+) );
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_2',
 	'type'        => 'group',
@@ -87,6 +90,7 @@ $group_field_id = $cmb->add_field( array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Image',
 	'id'   => 'icon-front',
+	'description' => 'Upload an Image',
 	'type' => 'file',
 ) );
 
@@ -201,6 +205,7 @@ $group_field_id = $cmb->add_field( array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Team Image',
 	'id'   => 'team-image-front',
+	'description' => 'Upload an Image',
 	'type' => 'file',
 ) );
 $cmb->add_group_field( $group_field_id, array(

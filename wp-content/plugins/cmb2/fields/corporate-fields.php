@@ -20,7 +20,7 @@ $group_field_id = $cmb->add_field( array(
     'type'        => 'group',
      'repeatable'  => false, // use false if you want non-repeatable group
     'options'     => array(
-        'group_title'   => __( 'Entry {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+        'group_title'   => __( 'Banner Img', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
         'add_button'    => __( 'Add Another Entry', 'cmb2' ),
         'remove_button' => __( 'Remove Entry', 'cmb2' ),
         'sortable'      => true, // beta
@@ -40,7 +40,7 @@ $cmb->add_group_field( $group_field_id, array(
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Banner Description',
+    'name' => 'Banner Subtitle',
     'description' => 'Write a short description to display on banner',
     'id'   => 'banner-subtitle',
     'type' => 'textarea_small',
@@ -64,8 +64,9 @@ $cmb = new_cmb2_box( array(
    'show_names'   => true, // Show field names on the left
 ) );
 $cmb->add_field( array(
-	'name' => 'Our Services',
+	'name' => 'Heading Title ',
 	'id'   => 'services-corp_2',
+  'description' => 'Write Heading title',
 	'type' => 'text',
 ) );
 $group_field_id = $cmb->add_field( array(
@@ -73,7 +74,7 @@ $group_field_id = $cmb->add_field( array(
     'type'        => 'group',
     // 'repeatable'  => false, // use false if you want non-repeatable group
     'options'     => array(
-        'group_title'   => __( 'Entry {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+        'group_title'   => __( 'Section 1', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
         'add_button'    => __( 'Add Another Entry', 'cmb2' ),
         'remove_button' => __( 'Remove Entry', 'cmb2' ),
         'sortable'      => true, // beta
@@ -81,9 +82,9 @@ $group_field_id = $cmb->add_field( array(
     ),
 ) );
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Entry Image',
+    'name' => 'Image',
     'id'   => 'image-corp',
-    'description' => 'Upload a picture',
+    'description' => 'Upload an Image',
     'type' => 'file',
 ) );
 $cmb->add_group_field( $group_field_id, array(
@@ -144,7 +145,7 @@ $group_field_id = $cmb->add_field( array(
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Image',
     'id'   => 'services_img',
-    'description' => 'Upload a picture',
+    'description' => 'Upload an Image',
     'type' => 'file',
 ) );
 $cmb->add_group_field( $group_field_id, array(
