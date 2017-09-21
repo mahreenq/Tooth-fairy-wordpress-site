@@ -35,7 +35,7 @@
 
 	<?php } ?>
 <?php
-    $bookRes = get_post_meta( get_the_ID(), 'services_app');?>
+    $bookRes = get_post_meta( get_the_ID(), 'schedule_app');?>
     <button class="white-font  align-self-center justify-center  <?php echo $button_color ?>"> <?php echo $bookRes[0]?> </button>
 </div>
 

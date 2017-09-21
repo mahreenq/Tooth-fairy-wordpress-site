@@ -116,7 +116,7 @@ function cmb2_corporate2() {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_corporate2_';
 $cmb = new_cmb2_box( array(
-   'id'           => 'services',
+   'id'           => 'services-corp',
    'title'        => 'The Services We Offer',
    'object_types' => array( 'page' ), // post type
    'show_on'      => array( 'key' => 'page-template', 'value' => 'page-corporate.php' ),
