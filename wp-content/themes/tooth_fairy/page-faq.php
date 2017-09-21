@@ -55,9 +55,6 @@
 
 	<?php get_footer(); ?>
 
-
-
-
 <script type="text/javascript">
 console.log ("hey")
 
