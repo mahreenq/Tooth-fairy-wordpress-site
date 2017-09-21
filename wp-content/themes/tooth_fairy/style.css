@@ -434,7 +434,7 @@ table {
 --------------------------------------------------------------*/
 /* Contact forms */
 input {
-  margin-top: 0.5rem; }
+  margin: 1rem; }
 
 .wpcf7-radio {
   display: -ms-flexbox;
@@ -543,9 +543,7 @@ a {
     margin: 0;
     padding-left: 0; }
     .main-navigation ul ul {
-      box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
       float: left;
-      position: absolute;
       top: 1.5rem;
       left: -999rem;
       z-index: 99999; }
@@ -792,6 +790,11 @@ button {
 .margin-auto {
   margin: auto; }
 
+.row {
+  max-width: 72rem;
+  margin: 0 auto;
+  width: 100%; }
+
 /* Front page */
 .home-banner {
   height: 20vh; }
@@ -874,7 +877,7 @@ button {
   padding: 2rem; }
 
 .ajax-loader {
-  display: none; }
+  display: none !important; }
 
 /*FOOTER */
 #text-2 {
