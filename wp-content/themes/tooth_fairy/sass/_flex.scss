@@ -114,11 +114,9 @@
 .flex-order-2{
 	order: 2;
 }
-
-.text-align{
-	text-align: center;
+.flex-row-wrap{
+	flex-flow:row wrap;
 }
-
 .flex-basis-25{
 	flex-basis: 25%;
 }
