@@ -54,9 +54,9 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'booking-confirma
  <?php if (is_page('book-step-1')){ ?>
 
   <div class="flex justify-center width-75 ">
-      <div class="width-25 grey-bkg border-top-left-radius border-bottom-left-radius"> </div>
-      <div class="width-25 drk-grey-bkg"> </div>
-      <div class="width-25 drk-grey-bkg border-top-right-radius border-bottom-right-radius"> </div>
+      <div class="width-25 grey-bkg border-top-left-radius border-bottom-left-radius height-25px grey-border"> </div>
+      <div class="width-25 drk-grey-bkg height-25px grey-border"> </div>
+      <div class="width-25 drk-grey-bkg border-top-right-radius border-bottom-right-radius height-25px grey-border"> </div>
 </div>
 
 

@@ -97,13 +97,13 @@ add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
                       // FAQ Script
 
 function faq() {
-  wp_enqueue_script( 'faq-dropmenu-on-mobile', get_template_directory_uri() . '/build/js/faq.js', array(), '1', true );
+  wp_enqueue_script( 'faq-dropmenu-on-mobile', get_template_directory_uri() . '/build/js/faq.min.js', array(), '1', true );
 }
 add_action( 'wp_enqueue_scripts', 'faq' );
 
                        // Header 
 function navbar() {
-  wp_enqueue_script( 'navbar', get_template_directory_uri() . '/build/js/navbar.js', array(), '2', true );
+  wp_enqueue_script( 'navbar', get_template_directory_uri() . '/build/js/navbar.min.js', array(), '2', true );
 }
 add_action( 'wp_enqueue_scripts', 'navbar' );
 

@@ -37,19 +37,42 @@
 			</header><!-- #masthead -->
 
 			<div id="content" class="site-content">
-              
+   
 
-              <div class="nav">
-        <label for="toggle">&#9776;</label>
-        <input type="checkbox" id="toggle"/>
-        <div class="menu">
-            <a href="#">Business</a>
-            <a href="#">Services</a>
-            <a href="#">Learn More</a>
-            <a href="#"><span>Free Trial</span></a>
-        </div>
+<div class="dropdown">
+<button onclick="myFunction()" class="dropbtn">☰</button>
+  <div id="myDropdown" class="dropdown-content">
+    <a href="#home">Our Services</a>
+    <a href="#about">About</a>
+    <a href="#contact">Contact</a>
+    <a href="#blog">Blog</a>
+  </div>
+</div>
+
+<script>
+/
+/* When the user clicks on the button, 
+toggle between hiding and showing the dropdown content */
 
 
+function myFunction() {
+    document.getElementById("myDropdown").classList.toggle("show");
+}
 
+// Close the dropdown if the user clicks outside of it
+window.onclick = function(event) {
+  if (!event.target.matches('.dropbtn')) {
 
+    var dropdowns = document.getElementsByClassName("dropdown-content");
+    var i;
+    for (i = 0; i < dropdowns.length; i++) {
+      var openDropdown = dropdowns[i];
+      if (openDropdown.classList.contains('show')) {
+        openDropdown.classList.remove('show');
+      }
+    }
+  }
+}
+</script>
 
+</body>

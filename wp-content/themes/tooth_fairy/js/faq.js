@@ -8,5 +8,6 @@
 
       $(".show").on("click",function() {
 
-      	var toggle = $(this).data("toggle");
-      	$("#"+toggle).toggle();
+          var toggle = $(this).data("toggle");
+          $("#"+toggle).toggle();
+});

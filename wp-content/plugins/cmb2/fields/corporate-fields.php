@@ -116,7 +116,7 @@ function cmb2_corporate2() {
     // Start with an underscore to hide fields from custom fields list
     $prefix = '_corporate2_';
 $cmb = new_cmb2_box( array(
-   'id'           => 'services-corp',
+   'id'           => 'services',
    'title'        => 'The Services We Offer',
    'object_types' => array( 'page' ), // post type
    'show_on'      => array( 'key' => 'page-template', 'value' => 'page-corporate.php' ),
@@ -126,7 +126,7 @@ $cmb = new_cmb2_box( array(
 ) );
 $cmb->add_field( array(
 	'name' => 'Our Services',
-	'id'   => 'services-corp_3',
+	'id'   => 'services_title',
 	'type' => 'text',
 ) );
 $group_field_id = $cmb->add_field( array(
@@ -143,13 +143,13 @@ $group_field_id = $cmb->add_field( array(
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Image',
-    'id'   => 'image-corp',
+    'id'   => 'services_img',
     'description' => 'Upload a picture',
     'type' => 'file',
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Title',
-    'id'   => 'description-1',
+    'id'   => 'services_subtitle',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
@@ -199,7 +199,7 @@ $group_field_id = $cmb->add_field( array(
 ) );
 $cmb->add_field( array(
 	'name' => 'Schedule Appointment',
-	'id'   => 'scheduleAppCorp',
+	'id'   => 'schedule_app',
 	'type' => 'text',
 ) );
 } ?>
