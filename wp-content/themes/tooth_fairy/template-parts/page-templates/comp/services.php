@@ -1,7 +1,8 @@
 <?php $background_color = "lg-blue-bkg"; ?>
 <?php $button_color ="med-blue-bkg"; ?>
 <?php if (is_page('residential')) {$background_color = "lg-yellow-bkg"; $button_color="yellow-bkg";} ?>
-	<div class="padding-lg flex direction-column  <?php echo $background_color?>">
+	<div class="<?php echo $background_color?>">
+		<div class="row padding-lg flex direction-column">
 	<?php $servicesTitle = get_post_meta( get_the_ID(), 'services_title'); ?>
 			<h3 class="margin-auto text-center padding-bottom-lg"> <?php	print_r($servicesTitle[0]); ?> </h3>
 
@@ -37,6 +38,7 @@
 <?php
     $bookRes = get_post_meta( get_the_ID(), 'schedule_app');?>
     <button class="white-font  align-self-center justify-center  <?php echo $button_color ?>"> <?php echo $bookRes[0]?> </button>
+</div>
 </div>
 
 

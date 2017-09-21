@@ -1,4 +1,4 @@
-<div class="padding-med text-center">
+<div class="padding-med text-center row">
   <?php $servicesTitle = get_post_meta( get_the_ID(), 'services-residential_2'); ?>
     	<h2 class="padding-bottom-med"><?php	print_r($servicesTitle[0]); ?> </h2>
   <?php $serviceRes = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_2');
