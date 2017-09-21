@@ -66,3 +66,36 @@ $(".show").on("click",function() {
 });
 
    </script>
+
+            <button class="hamburger">&#9776;</button>
+  <button class="cross">&#735;</button>
+</header>
+
+<div class="menu1">
+  <ul>
+    <a href="#"><li>Our Services</li></a>
+    <a href="#"><li>About</li></a>
+    <a href="#"><li>Contact</li></a>
+    <a href="#"><li>Blog</li></a>
+  </ul>
+</div> 
+
+<style type="text/css">
+	.collapse{
+  cursor: pointer;
+  display: block;
+  background: #cdf;
+}
+.collapse + input{
+  display: none; /* hide the checkboxes */
+}
+.collapse + input + div{
+  display:none;
+}
+.collapse + input:checked + div{
+  display:block;
+}
+
+	
+</style>
+
