@@ -1167,4 +1167,7 @@ a:visited {
   .d-text-center {
     text-align: center; }
   .hideservices {
-    display: block; } }
+    display: block; }
+  h4:after {
+    content: "\f107";
+    font-family: FontAwesome; } }
