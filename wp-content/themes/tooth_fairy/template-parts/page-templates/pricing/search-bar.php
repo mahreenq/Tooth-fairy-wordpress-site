@@ -18,10 +18,7 @@ foreach ($auto[0] as $a) {
 </div>
 
 
-<!-- REMOVE THIS AND MOVE TO JS FILE -->
-
-
-  <script>
+<script>
 
 jQuery(document).ready(function($){
     var providers = <?php echo "[".$providers."]"; ?>;
@@ -37,7 +34,6 @@ jQuery(document).ready(function($){
         });
     })
 })
-  </script>
-  <link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
-<script src="YourJquery source path"></script>
+</script>
+<link href="http://code.jquery.com/ui/1.10.2/themes/smoothness/jquery-ui.css" rel="Stylesheet"></link>
 <script src="http://code.jquery.com/ui/1.10.2/jquery-ui.js" ></script>

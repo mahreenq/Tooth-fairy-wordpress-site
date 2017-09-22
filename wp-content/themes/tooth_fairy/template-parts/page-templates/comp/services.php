@@ -38,19 +38,3 @@
 							    <button class="white-font  align-self-center justify-center  <?php echo $button_color ?>"> <?php echo $bookRes[0]?> </button>
 			</div>
 		</div>
-
-
-<!-- REMOVE THIS AND PUT IT IN A NEW FILE -->
-
-<script type="text/javascript">
-
-jQuery(document).ready(function($){
-
-$(".show").on("click",function() {
-	var toggle = $(this).data("toggle");
-	$("#"+toggle).toggle();
-
-});
-});
-
-   </script>

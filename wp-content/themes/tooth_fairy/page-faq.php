@@ -20,19 +20,3 @@
 	</div><!-- #primary -->
 
 <?php get_footer(); ?>
-
-
-<!-- MOVE THIS TO A JS FILE PLEASE -->
-<script type="text/javascript">
-
-
-jQuery(document).ready(function($){
-
-$(".show").on("click",function() {
-	var toggle = $(this).data("toggle");
-	$("#"+toggle).toggle();
-
-});
-});
-
-   </script>
