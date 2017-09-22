@@ -1,3 +1,5 @@
+
+/*
 var dropdown = document.getElementById('myDropdown');
 var x = document.getElementById('primary-menu');
 x.style.display = 'none';
@@ -28,4 +30,11 @@ var subMenu = this.querySelector('.sub-menu');
     }
 
 });
+
+*/
+jQuery(document).ready(function ($) {
+  $("#myDropdown").on("click", function () {
+    $(".menu-menu-1-container").toggle();
+  })
+})
 
