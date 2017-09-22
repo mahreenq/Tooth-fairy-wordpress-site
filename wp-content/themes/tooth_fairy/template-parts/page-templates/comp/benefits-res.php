@@ -27,9 +27,11 @@
 	   $i+=1;}
 
   $pricinglink = get_post_meta( get_the_ID(), 'service-prices'); ?>
-      <a  href="#">
+
+  <?php echo '<a  href="'.get_site_url().'?page_id=28">' ; ?>
+
         <p class="padding-bottom-lg lg-blue-font">
-          <?php	print_r($pricinglink[0]); ?> 
+          <?php	print_r($pricinglink[0]); ?>
         </p>
       </a>
 </div>

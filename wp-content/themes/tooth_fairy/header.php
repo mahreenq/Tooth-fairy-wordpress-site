@@ -29,7 +29,7 @@
 
 							<div class="padding-left-sm">
 	<!-- CHANGE LINK HERE TO LINK TO HOME PAGE -->
-									<a href="#">
+									<a href="<?php echo get_home_url(); ?>">
 										<img src=<?php echo get_template_directory_uri().'/assets/logo.png'?>>
 									</a>
 							</div>
