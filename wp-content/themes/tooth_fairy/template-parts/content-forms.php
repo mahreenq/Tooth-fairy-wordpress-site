@@ -96,14 +96,3 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'booking-confirma
 
 
 <?php get_footer() ?>
-
-
-<style>
-
-input {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-  padding: 0.5rem;
-}
-
-</style>
