@@ -4,8 +4,11 @@
 /* Contact forms */
 .wpcf7-radio{
 display:flex;
-flex-direction: column;
+
 }
+
+
+
 input[type="submit"] {
    background-color: $yellow;
    border: none;
@@ -74,8 +77,14 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"] {
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="radio"] {
 	padding: 3px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem;
 }
 
 textarea {
