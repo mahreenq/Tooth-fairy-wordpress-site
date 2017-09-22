@@ -11,7 +11,7 @@
 					<p><?php echo $dentalTeam['team-description']; ?></p>
 				</div>
 		<?php } ?>
-				<div class="flex justify-even">
+				<div class="flex justify-around">
 					<?php $frontFifth = get_post_meta( get_the_ID(), 'wiki_test_repeat_group_5');
 						foreach($frontFifth[0] as $dentalPartners) { ?>
 								<div class="d-width-15">
