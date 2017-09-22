@@ -2,9 +2,6 @@
 	.menu-toggle {
 		display: none;
 	}
-	.main-navigation ul {
-		display: block;
-	}
 	.d-width-auto{
 		width:auto;
 	}
@@ -16,7 +13,7 @@
 		flex-direction: row;
 		justify-content: center;
 	}
-	.menu-item-178{
+	.menu-item-223{
 		background-color:$yellow;
 		a {
 			color: white;
@@ -24,6 +21,15 @@
 		a:visited{
 			color:white;
 		}
+	}
+	.menu-menu-1-container{
+		display:block!important;
+	}
+	.sub-menu{
+		position: absolute;
+		top: 50px !important;
+		left: 10px;
+		background-color: $lg-blue-bkg;
 	}
 	.order-2{
 		order:2;
