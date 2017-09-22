@@ -82,6 +82,7 @@ if (is_page(array('book-step-1', 'book-step-2', 'book-step-3', 'booking-confirma
 
      <?php } ?>
      <?php if (is_page('booking-confirmation')){ ?>
+       <a href="http://localhost:8888/tooth_fairy_wordpress_site/wp-content/uploads/2017/09/SurveyMarketInsights.pdf"> Download forms here </a>
   <div class="flex justify-center width-75 ">
 
           <div class="width-25 yellow-bkg border-top-left-radius border-bottom-left-radius height-25px grey-border"> </div>
