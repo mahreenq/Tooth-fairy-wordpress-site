@@ -195,7 +195,6 @@ if ( ! class_exists( 'CMB2_Bootstrap_2253', false ) ) {
 include('fields/front-page-fields.php');
 include('fields/faq-fields.php');
 include('fields/residential-fields.php');
-include('fields/corporatebooking-page-fields.php');
 include('fields/contact-page-fields.php');
 include('fields/pricing-fields.php');
 include('fields/corporate-fields.php');

@@ -10,36 +10,19 @@
 	get_header(); ?>
 
 	<div id="primary">
-	<div id="content padding-lg" role="main" data>
-		<?php while ( have_posts() ) : the_post(); ?>
+		<div id="content padding-lg" role="main" data>
 
-			<h1 class="text-center"> <?php the_title();  ?> </h1>
-			<div class="lg-blue-bkg ">
-				<div class="row padding-med">
-		<?php
-$faqs = get_post_meta(get_the_ID(), 'wiki_test_repeat_group'); ?>
-
- <?php foreach($faqs[0] as $faq => $question) { ?>
-	    <!-- Wraps members of array in elements   -->
-	    <div class="padding-lg" >
-					<h4 class="padding-sm show"  data-toggle="answer<?php echo $faq ?>" >
-				 		<?php echo $question['question']; ?>
-			 			<i class="fa fa-angle-down d-hide" aria-hidden="true"></i>
-	  			</h4>
-	     		<p class="hideservices padding-left-lg hideservices " id="answer<?php echo $faq ?>">
-				 		<?php  echo $question['answer'];?>
-			 		</p>
-	 		</div>
-	    <?php }?>
-	  </div>
-	</div>
-	<?php endwhile; // end of the loop. ?>
-
-	</div><!-- #content -->
+			<?php while ( have_posts() ) : the_post(); ?>
+					<?php get_template_part( 'template-parts/page-templates/faq' ); ?>
+			<?php endwhile; // end of the loop. ?>
+			
+		</div><!-- #content -->
 	</div><!-- #primary -->
 
-	<?php get_footer(); ?>
+<?php get_footer(); ?>
 
+
+<!-- MOVE THIS TO A JS FILE PLEASE -->
 <script type="text/javascript">
 
 
