@@ -23,5 +23,5 @@
                  <?php echo $banner['banner-subtitle'] ?>
                 </h2>
     		</div>
-    		<?php
+    	<?php
     	} ?>

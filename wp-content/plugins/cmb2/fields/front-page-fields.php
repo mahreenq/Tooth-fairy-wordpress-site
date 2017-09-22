@@ -71,9 +71,10 @@ $cmb = new_cmb2_box( array(
 $cmb->add_field( array(
 	'name' => 'Heading Title ',
 	'description' => 'Title Why choose GTA tooth fairy',
-	'description' => 'Write Heading title',
+	'id' => 'reasons-title',
 	'type' => 'text',
 ) );
+
 $group_field_id = $cmb->add_field( array(
 	'id'          => 'wiki_test_repeat_group_2',
 	'type'        => 'group',
@@ -97,12 +98,14 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Reason',
 	'id'   => 'reason-front',
+	'description' => 'Short Reason',
 	'type' => 'text',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Elaborate',
 	'id'   => 'elaborate-front',
+	'description' => 'Elaborate on reason here',
 	'type' => 'text',
 ) );
 }
@@ -143,20 +146,23 @@ $group_field_id = $cmb->add_field( array(
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
-	'name' => 'Customer Type',
+	'name' => 'Customer Type Title',
 	'id'   => 'customer-front',
+	'description' => 'Write Customer title ',
 	'type' => 'text',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Customer Type Image',
 	'id'   => 'customer-type-image-front',
+	'description' => 'Icon of customer type',
 	'type' => 'file',
 ) );
 
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Learn more',
 	'id'   => 'learn-button-front',
+	'description' => 'text in the button',
 	'type' => 'text',
 ) );
 
@@ -188,6 +194,7 @@ $cmb = new_cmb2_box( array(
 $cmb->add_field( array(
 	'name' => 'Our Team',
 	'id'   => 'team-front',
+	'description' => 'Team title',
 	'type' => 'text',
 ) );
 $group_field_id = $cmb->add_field( array(
@@ -211,6 +218,7 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'team Name',
 	'id'   => 'team-name-front',
+	'description' => 'Team members name',
 	'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
@@ -261,6 +269,7 @@ $group_field_id = $cmb->add_field( array(
 $cmb->add_group_field( $group_field_id, array(
 	'name' => 'Affiliations',
 	'id'   => 'affiliations-image-front',
+	'description' => 'upload affiliat logos',
 	'type' => 'file',
 ) );
 

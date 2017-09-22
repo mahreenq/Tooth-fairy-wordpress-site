@@ -1,21 +1,16 @@
+<div class="padding-right-lg padding-left-lg">
 <?php
-get_header();
-echo '<div class="padding-right-lg padding-left-lg">';
 //================About Pricing===================
 
 
     $price = get_post_meta( get_the_ID(), 'wiki_test_repeat_group');
-    if(sizeof($price[0]) > 0){
+
         echo "<div>";
     foreach($price[0] as $main_pricing) {
     	echo "<h1 class='text-center'>".$main_pricing['pricing-title']."</h1>";
         echo "<p class='padding-bottom-lg d-text-center'>".$main_pricing['pricing-info']."</p>";
         }
         echo "</div>";
-}
-else{
-    echo "no content";
-}
 ?>
 
 <?php

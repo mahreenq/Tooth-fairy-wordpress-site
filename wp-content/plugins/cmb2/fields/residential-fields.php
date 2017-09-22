@@ -80,7 +80,7 @@ $group_field_id = $cmb->add_field( array(
     'type'        => 'group',
     // 'repeatable'  => false, // use false if you want non-repeatable group
     'options'     => array(
-        'group_title'   => __( 'Entry {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+        'group_title'   => __( 'Item {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
         'add_button'    => __( 'Add Another Entry', 'cmb2' ),
         'remove_button' => __( 'Remove Entry', 'cmb2' ),
         'sortable'      => true, // beta
@@ -96,33 +96,33 @@ $cmb->add_group_field( $group_field_id, array(
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Entry Title',
     'id'   => 'title-res',
+    'description' => 'Enter Item Title',
     'type' => 'text',
 ) );
 
 
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Description line 1',
+    'name' => 'Reason 1',
     'id'   => 'description-1',
+    'description' => 'Write a bullet point here',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Description line 2',
     'id'   => 'description-2',
+    'description' => 'Write a bullet point here',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
     'name' => 'Description line 3',
     'id'   => 'description-3',
-    'type' => 'text',
-) );
-$cmb->add_group_field( $group_field_id, array(
-    'name' => 'Description line 4',
-    'id'   => 'description-4',
+    'description' => 'Write a bullet point here',
     'type' => 'text',
 ) );
 $cmb->add_field( array(
-	'name' => 'Our prices',
+	'name' => 'Link to Price Page',
 	'id'   => 'service-prices',
+  'description' => 'This is the link to the pricing page',
 	'type' => 'text',
 ) );
 }?>

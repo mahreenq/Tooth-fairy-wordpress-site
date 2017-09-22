@@ -74,7 +74,7 @@ $group_field_id = $cmb->add_field( array(
     'type'        => 'group',
     // 'repeatable'  => false, // use false if you want non-repeatable group
     'options'     => array(
-        'group_title'   => __( 'Section 1', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
+        'group_title'   => __( 'Item {#}', 'cmb2' ), // since version 1.1.4, {#} gets replaced by row number
         'add_button'    => __( 'Add Another Entry', 'cmb2' ),
         'remove_button' => __( 'Remove Entry', 'cmb2' ),
         'sortable'      => true, // beta
@@ -88,22 +88,22 @@ $cmb->add_group_field( $group_field_id, array(
     'type' => 'file',
 ) );
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Benefit 1 Blue',
+    'name' => 'Blue benefit text ',
     'id'   => 'description-1',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Benefit 1',
+    'name' => 'black Benefit text',
     'id'   => 'description-2',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Benefit 2 Blue',
+    'name' => 'Blue benefit text',
     'id'   => 'description-3',
     'type' => 'text',
 ) );
 $cmb->add_group_field( $group_field_id, array(
-    'name' => 'Benefit 2 ',
+    'name' => 'Black benefit text ',
     'id'   => 'description-4',
     'type' => 'text',
 ) );
