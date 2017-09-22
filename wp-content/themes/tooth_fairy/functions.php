@@ -101,6 +101,10 @@ function navbar() {
 }
 add_action( 'wp_enqueue_scripts', 'navbar' );
 
+function toggle() {
+  wp_enqueue_script( 'page-faq', get_template_directory_uri() . '/build/js/toggle.min.js', array(), '2', true );
+}
+add_action( 'wp_enqueue_scripts', 'toggle' );
 
 /**
  * Custom template tags for this theme.
