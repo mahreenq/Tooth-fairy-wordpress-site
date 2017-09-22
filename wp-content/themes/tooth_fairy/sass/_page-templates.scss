@@ -108,13 +108,19 @@
   }
 
   #wpcf7-f69-p47-o1 , #wpcf7-f58-p43-o1{
-    width: 500px;
+    width: 45rem;
   }
 
   .date-74{
     display:flex;
     justify-content:center;
     padding: 2rem;
+  }
+
+  .wpcf7-date{
+    border: none;
+    border-radius: 40px;
+    font-size: 1.2rem;
   }
 
   .ajax-loader{

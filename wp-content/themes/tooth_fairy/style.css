@@ -435,9 +435,7 @@ table {
 /* Contact forms */
 .wpcf7-radio {
   display: -ms-flexbox;
-  display: flex;
-  -ms-flex-direction: column;
-      flex-direction: column; }
+  display: flex; }
 
 input[type="submit"] {
   background-color: #FFD466;
@@ -507,8 +505,14 @@ input[type="text"],
 input[type="email"],
 input[type="url"],
 input[type="password"],
-input[type="search"] {
-  padding: 3px; }
+input[type="tel"],
+input[type="search"],
+input[type="number"],
+input[type="radio"] {
+  padding: 3px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 0.5rem; }
 
 textarea {
   padding-left: 3px;
@@ -888,7 +892,7 @@ button {
   border-bottom-right-radius: 20px; }
 
 #wpcf7-f69-p47-o1, #wpcf7-f58-p43-o1 {
-  width: 500px; }
+  width: 45rem; }
 
 .date-74 {
   display: -ms-flexbox;
@@ -896,6 +900,11 @@ button {
   -ms-flex-pack: center;
       justify-content: center;
   padding: 2rem; }
+
+.wpcf7-date {
+  border: none;
+  border-radius: 40px;
+  font-size: 1.2rem; }
 
 .ajax-loader {
   display: none !important; }
@@ -1103,6 +1112,19 @@ button {
 .width-100 {
   width: 100%; }
 
+/* HEIGHT */
+.height-25 {
+  height: 25rem; }
+
+.height-50 {
+  height: 50rem; }
+
+.height-75 {
+  height: 75rem; }
+
+.height-100 {
+  height: 100rem; }
+
 /* PADDING */
 .padding-xsm {
   padding: .1em; }
@@ -1177,6 +1199,12 @@ button {
   padding: 3em 1em 3em 1em; }
 
 /* MARGIN */
+.marging-top-sm {
+  margin-top: 1em; }
+
+.margin-bottom-sm {
+  margin-bottom: 1em; }
+
 .margin-top-med {
   margin-top: 2em; }
 
@@ -1272,6 +1300,8 @@ button {
     padding: 0 1em 0 1em; }
   .med-blue-bkg-50 {
     background: linear-gradient(rgba(50, 105, 138, 0.6), rgba(50, 105, 138, 0.6)); }
+  #wpcf7-f55-p41-o1 {
+    width: 45rem; }
   /*FONT SIZE */
   h1 {
     font-size: 3rem; }
