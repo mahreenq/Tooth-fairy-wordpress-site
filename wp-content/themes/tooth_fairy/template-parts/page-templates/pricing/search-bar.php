@@ -22,9 +22,9 @@ foreach ($auto[0] as $a) {
 
 <!-- REMOVE THIS AND MOVE TO JS FILE -->
 
+
   <script>
-    console.log ("hi");
-  jQuery(document).ready(function($){
+
 
     var providers = <?php echo "[".$providers."]"; ?>;
     $( "#tags" ).autocomplete({
@@ -33,11 +33,11 @@ foreach ($auto[0] as $a) {
     });
 
     $(document).ready(function () {
-      console.log(1);
         $(".ui-autocomplete").on("click",function (e){
             var inputVal = $("#tags").val()
             $("#accept").html("We accept plans from" + " " + inputVal + ".");
         });
     })
-})
+
   </script>
+
